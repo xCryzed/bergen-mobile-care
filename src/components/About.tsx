@@ -1,0 +1,107 @@
+
+import { Card } from "@/components/ui/card";
+import { Award, Heart, Shield, Clock } from "lucide-react";
+
+export const About = () => {
+  return (
+    <section id="about" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-clamp-2xl md:text-clamp-3xl font-bold text-gray-800 mb-4">
+              Über mich
+            </h2>
+            <p className="text-clamp-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Mit Leidenschaft und Fachwissen für Ihre Fußgesundheit – direkt bei Ihnen zu Hause
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Portrait and intro */}
+            <div className="animate-fade-in">
+              <div className="bg-gradient-to-br from-soft-blue-100 to-warm-beige-100 rounded-2xl p-8 mb-8">
+                <div className="w-32 h-32 bg-gradient-to-br from-soft-blue-500 to-soft-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <span className="text-white font-bold text-4xl">RB</span>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 text-center mb-4">Regina Bergen</h3>
+                <p className="text-center text-soft-blue-600 font-semibold mb-4">Medizinische Fußpflegerin</p>
+              </div>
+
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p className="text-clamp-base">
+                  Herzlich willkommen! Ich bin Regina Bergen und bringe seit über 10 Jahren professionelle 
+                  Fußpflege direkt zu Ihnen nach Hause. Meine Mission ist es, Ihnen mit einfühlsamer 
+                  Betreuung zu gesunden und gepflegten Füßen zu verhelfen.
+                </p>
+                <p className="text-clamp-base">
+                  Besonders am Herzen liegt mir die Betreuung von Senioren, Menschen mit eingeschränkter 
+                  Mobilität und allen, die sich eine bequeme Behandlung in vertrauter Umgebung wünschen.
+                </p>
+              </div>
+            </div>
+
+            {/* Qualifications and values */}
+            <div className="space-y-6 animate-slide-up">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Qualifikationen & Werte</h3>
+              
+              <div className="grid gap-4">
+                <Card className="p-6 border-l-4 border-l-soft-blue-500 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <Award className="w-6 h-6 text-soft-blue-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Zertifizierte Ausbildung</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Staatlich anerkannte Ausbildung zur medizinischen Fußpflegerin mit 
+                        regelmäßigen Fortbildungen
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6 border-l-4 border-l-sage-500 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <Heart className="w-6 h-6 text-sage-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Einfühlsame Betreuung</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Besondere Sensibilität für die Bedürfnisse älterer Menschen und 
+                        Diabetiker
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6 border-l-4 border-l-warm-beige-500 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <Shield className="w-6 h-6 text-warm-beige-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Höchste Hygiene</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Sterile Instrumente und modernste Hygienemaßnahmen für Ihre 
+                        Sicherheit
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6 border-l-4 border-l-soft-blue-500 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start space-x-4">
+                    <Clock className="w-6 h-6 text-soft-blue-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Flexible Termine</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Termine auch am Wochenende und nach Ihren individuellen 
+                        Bedürfnissen
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

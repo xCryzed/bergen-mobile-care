@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Warm, professional colors for foot care
+				'soft-blue': {
+					50: '#f0f9ff',
+					100: '#e0f2fe', 
+					200: '#bae6fd',
+					300: '#7dd3fc',
+					400: '#38bdf8',
+					500: '#0ea5e9',
+					600: '#0284c7',
+					700: '#0369a1',
+					800: '#075985',
+					900: '#0c4a6e'
+				},
+				'warm-beige': {
+					50: '#fdf8f6',
+					100: '#f2e8e5',
+					200: '#eaddd7',
+					300: '#e0cfc7',
+					400: '#d2bab0',
+					500: '#bfa094',
+					600: '#a18072',
+					700: '#977669',
+					800: '#846358',
+					900: '#43302b'
+				},
+				'sage': {
+					50: '#f6f7f6',
+					100: '#e3e7e3',
+					200: '#c7d2c7',
+					300: '#9fb5a0',
+					400: '#739475',
+					500: '#557758',
+					600: '#426045',
+					700: '#364c38',
+					800: '#2d3f2f',
+					900: '#273529'
 				}
 			},
 			borderRadius: {
@@ -89,6 +127,16 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontSize: {
+				'clamp-xs': 'clamp(0.75rem, 2vw, 0.875rem)',
+				'clamp-sm': 'clamp(0.875rem, 2.5vw, 1rem)',
+				'clamp-base': 'clamp(1rem, 3vw, 1.125rem)',
+				'clamp-lg': 'clamp(1.125rem, 4vw, 1.25rem)',
+				'clamp-xl': 'clamp(1.25rem, 5vw, 1.5rem)',
+				'clamp-2xl': 'clamp(1.5rem, 6vw, 2rem)',
+				'clamp-3xl': 'clamp(1.875rem, 7vw, 2.5rem)',
+				'clamp-4xl': 'clamp(2.25rem, 8vw, 3rem)'
 			}
 		}
 	},
