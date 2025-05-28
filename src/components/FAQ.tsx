@@ -90,7 +90,7 @@ export const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+49241123456"
+                href="tel:+1701212677"
                 className="inline-flex items-center justify-center px-6 py-3 bg-soft-blue-600 hover:bg-soft-blue-700 text-white rounded-full font-semibold transition-colors"
               >
                 Jetzt anrufen: 0241 / 123 456

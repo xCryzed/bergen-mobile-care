@@ -36,21 +36,21 @@ export const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-soft-blue-400" />
-                  <a href="tel:+49241123456" className="hover:text-soft-blue-300 transition-colors">
-                    0241 / 123 456
+                  <a href="tel:+491701212677" className="hover:text-soft-blue-300 transition-colors">
+                    +49 170 1212677
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-soft-blue-400" />
-                  <a href="mailto:info@regina-bergen-fusspflege.de" className="hover:text-soft-blue-300 transition-colors text-sm">
-                    info@regina-bergen-fusspflege.de
+                  <a href="mailto:kontakt@fusspflegebergen.de" className="hover:text-soft-blue-300 transition-colors text-sm">
+                    kontakt@fusspflegebergen.de
                   </a>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-soft-blue-400 mt-1" />
                   <div>
                     <p>Einsatzgebiet:</p>
-                    <p className="text-sm text-gray-400">Aachen und 15 km Umkreis</p>
+                    <p className="text-sm text-gray-400">Aachen und 20 km Umkreis</p>
                   </div>
                 </div>
               </div>

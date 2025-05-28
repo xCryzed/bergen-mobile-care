@@ -89,7 +89,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Telefon</p>
-                      <a href="tel:+49241123456" className="text-soft-blue-600 hover:text-soft-blue-700 font-medium">
+                      <a href="tel:+491701212677" className="text-soft-blue-600 hover:text-soft-blue-700 font-medium">
                         0241 / 123 456
                       </a>
                     </div>
@@ -135,17 +135,17 @@ export const Contact = () => {
                 <Button
                   size="lg"
                   className="w-full bg-soft-blue-600 hover:bg-soft-blue-700 text-white py-4 rounded-xl font-semibold text-lg shadow-lg"
-                  onClick={() => window.open('tel:+49241123456')}
+                  onClick={() => window.open('tel:+491701212677')}
                 >
                   <Phone className="w-5 h-5 mr-3" />
-                  Jetzt anrufen: 0241 / 123 456
+                  Jetzt anrufen: +49 170 1212677
                 </Button>
                 
                 <Button
                   size="lg"
                   variant="outline"
                   className="w-full border-2 border-sage-600 text-sage-600 hover:bg-sage-600 hover:text-white py-4 rounded-xl font-semibold text-lg"
-                  onClick={() => window.open('https://wa.me/49241123456', '_blank')}
+                  onClick={() => window.open('https://wa.me/491701212677', '_blank')}
                 >
                   <MessageCircle className="w-5 h-5 mr-3" />
                   WhatsApp Nachricht
