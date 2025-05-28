@@ -32,7 +32,7 @@ export const Hero = () => {
           {/* Subheadline */}
           <p className="text-clamp-lg text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto animate-fade-in text-balance">
             Einfühlsam, professionell & bequem – für gepflegte Füße und mehr Lebensqualität. 
-            Ich biete medizinische Fußpflege direkt bei Ihnen zu Hause in Aachen und Umgebung.
+            Ich biete medizinische Fußpflege direkt bei Ihnen zu Hause.
           </p>
 
           {/* Location indicator */}
