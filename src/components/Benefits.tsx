@@ -97,7 +97,7 @@ export const Benefits = () => {
                 Für wen ist die Fußpflege geeignet?
               </h3>
               <p className="text-clamp-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Meine mobile Fußpflege richtet sich an alle, die ihren Füßen eine zuverlässige, fachgerechte und einfühlsame Pflege ermöglichen möchten – ganz gleich in welchem Alter
+                Meine mobile Fußpflege richtet sich an alle, die ihren Füßen eine zuverlässige, fachgerechte und empathische Pflege ermöglichen möchten – ganz gleich in welchem Alter
               </p>
             </div>
             
