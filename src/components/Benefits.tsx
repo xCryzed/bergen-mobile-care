@@ -104,6 +104,16 @@ export const Benefits = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-lg">
+                  <Heart className="w-8 h-8 text-warm-beige-600" />
+                </div>
+                <h4 className="text-lg font-semibold text-gray-800">Alle Menschen</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Die Wert auf Wohlbefinden und Lebensqualität legen und sich mit professioneller Fußpflege bewusst etwas Gutes tun möchten
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <Users className="w-8 h-8 text-soft-blue-600" />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">Senioren</h4>
@@ -119,16 +129,6 @@ export const Benefits = () => {
                 <h4 className="text-lg font-semibold text-gray-800">Hilfsbedürftige Menschen</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Die auf Unterstützung angewiesen sind und die Vorteile einer einfühlsamen Behandlung in ihrer vertrauten Umgebung besonders schätzen
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-lg">
-                  <Heart className="w-8 h-8 text-warm-beige-600" />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-800">Alle Menschen</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Die Wert auf Wohlbefinden und Lebensqualität legen und sich mit professioneller Fußpflege bewusst etwas Gutes tun möchten
                 </p>
               </div>
             </div>
