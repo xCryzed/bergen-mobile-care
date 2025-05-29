@@ -1,43 +1,43 @@
 
 import { Card } from "@/components/ui/card";
-import { Home, Clock, Heart, Shield, Users, Star } from "lucide-react";
+import { Home, Clock, Heart, Shield, Users, Star, Footprints } from "lucide-react";
 
 export const Benefits = () => {
   const benefits = [
     {
-      icon: Home,
-      title: "Komfort zu Hause",
-      description: "Entspannte Behandlung in Ihrer gewohnten Umgebung ohne Anfahrt oder Wartezeiten",
-      color: "soft-blue"
-    },
-    {
-      icon: Clock,
-      title: "Zeitersparnis",
-      description: "Keine Anfahrt, keine Parkplatzsuche – ich komme pünktlich zu Ihrem Wunschtermin",
-      color: "sage"
-    },
-    {
-      icon: Heart,
-      title: "Für Senioren ideal",
-      description: "Besonders geeignet für ältere Menschen und Personen mit eingeschränkter Mobilität",
-      color: "warm-beige"
-    },
-    {
-      icon: Shield,
-      title: "Hygiene & Sicherheit",
-      description: "Sterile Instrumente und höchste Hygienestandards für Ihre Gesundheit",
+      icon: Footprints,
+      title: "Fußpflege mit Wirkung",
+      description: "Bedeutet Gesundheitsvorsorge für Füße und Beine und erhöht die Lebensqualität. Gepflegte Füße wirken attraktiv und fördern das Wohlbefinden. Ich unterstütze Sie durch Haut- und Nagelpflege",
       color: "soft-blue"
     },
     {
       icon: Users,
       title: "Persönliche Betreuung",
-      description: "Individuelle Behandlung und einfühlsamer Umgang in entspannter Atmosphäre",
+      description: "Ich biete Ihnen eine ausführliche Beratung, eine individuell abgestimmte Behandlung und einen optimalen Rhythmus für langfristig gesunde Füße, denn Ihre Zufriedenheit ist mein Ziel",
       color: "sage"
     },
     {
       icon: Star,
       title: "Professionelle Qualität",
-      description: "Medizinische Fußpflege auf höchstem Niveau mit modernsten Methoden",
+      description: "Ich verwende ausschließlich hochwertige, hautverträgliche Produkte aus dem Fachhandel und wähle die Pflege individuell nach den Bedürfnissen Ihrer Füße aus für eine gezielte und wirksame Unterstützung",
+      color: "warm-beige"
+    },
+    {
+      icon: Shield,
+      title: "Hygiene & Sicherheit",
+      description: "Hygiene und Sicherheit haben für mich höchste Priorität. Ich arbeite mit modernen Geräten, hochwertigen Materialien und sterilisierten Instrumenten, um Ihnen eine sichere und professionelle Behandlung zu garantieren",
+      color: "soft-blue"
+    },
+    {
+      icon: Home,
+      title: "Komfort zu Hause",
+      description: "Genießen Sie Ihre Fußpflege entspannt in Ihrer gewohnten Umgebung. Ohne Hektik, in vertrauter Atmosphäre und ganz ohne Zeitdruck – dort, wo Sie sich am wohlsten fühlen",
+      color: "sage"
+    },
+    {
+      icon: Clock,
+      title: "Zeitersparnis",
+      description: "Ich biete Ihnen mobile Fußpflege ganz ohne Anfahrtswege, Parkplatzsuche oder Wartezeiten. Sie sparen wertvolle Zeit und vermeiden stressige Wege – für mehr Flexibilität und einen entspannten Alltag",
       color: "warm-beige"
     }
   ];
