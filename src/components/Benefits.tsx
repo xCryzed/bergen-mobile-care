@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { Home, Clock, Heart, Shield, Users, Star, Footprints } from "lucide-react";
+import {Home, Clock, Heart, Shield, Users, Star, Footprints, HandHelping, Globe, PersonStanding} from "lucide-react";
 
 export const Benefits = () => {
   const benefits = [
@@ -94,8 +94,11 @@ export const Benefits = () => {
           <div className="mt-20 bg-gradient-to-r from-soft-blue-50 to-sage-50 rounded-2xl p-8 md:p-12">
             <div className="text-center mb-10">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                Besonders geeignet für
+                Für wen ist die Fußpflege geeignet?
               </h3>
+              <p className="text-clamp-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Meine mobile Fußpflege richtet sich an alle, die ihren Füßen eine zuverlässige, fachgerechte und einfühlsame Pflege ermöglichen möchten – ganz gleich in welchem Alter
+              </p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -105,27 +108,27 @@ export const Benefits = () => {
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">Senioren</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Bequeme Behandlung ohne beschwerliche Anfahrt oder lange Wartezeiten
+                  Die regelmäßige Pflege schätzen und trotz eingeschränkter Mobilität oder gesundheitlicher Probleme nicht auf professionelle Fußpflege verzichten möchten
                 </p>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-lg">
-                  <Clock className="w-8 h-8 text-sage-600" />
+                  <HandHelping className="w-8 h-8 text-sage-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">Berufstätige</h4>
+                <h4 className="text-lg font-semibold text-gray-800">Hilfsbedürftige Menschen</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Flexible Termine auch abends und am Wochenende nach Ihrem Zeitplan
+                  Die auf Unterstützung angewiesen sind und die Vorteile einer einfühlsamen Behandlung in ihrer vertrauten Umgebung besonders schätzen
                 </p>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <Heart className="w-8 h-8 text-warm-beige-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">Menschen mit Einschränkungen</h4>
+                <h4 className="text-lg font-semibold text-gray-800">Alle</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Professionelle Fußpflege trotz eingeschränkter Mobilität oder gesundheitlicher Probleme
+                  Die Wert auf Wohlbefinden und Lebensqualität legen und sich mit professioneller Fußpflege bewusst etwas Gutes tun möchten
                 </p>
               </div>
             </div>
