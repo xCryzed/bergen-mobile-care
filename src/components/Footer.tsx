@@ -1,7 +1,17 @@
 
 import { Heart, MapPin, Phone, Mail } from "lucide-react";
+import {useLocation, useNavigate} from "react-router-dom";
 
 export const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleNavigate = () => {
+    if (!location.pathname.includes("impressum")) {
+      console.log("Hallo")
+      navigate("impressum");
+    }
+  }
+
   return (
     <footer className="bg-gray-800 text-white py-16">
       <div className="container mx-auto px-4">
@@ -91,7 +101,7 @@ export const Footer = () => {
               © 2024 Regina Bergen - Mobile Fußpflege. Alle Rechte vorbehalten.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Impressum</a>
+              <a href="impressum" onClick={handleNavigate} className="text-sm text-gray-400 hover:text-white transition-colors">Impressum</a>
               <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Datenschutz</a>
               <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">AGB</a>
             </div>

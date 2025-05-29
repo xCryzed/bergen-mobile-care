@@ -118,7 +118,7 @@ export const Benefits = () => {
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">Senioren</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Die regelmäßige Pflege schätzen und trotz eingeschränkter Mobilität oder gesundheitlicher Probleme nicht auf professionelle Fußpflege verzichten möchten
+                  Die regelmäßige Pflege schätzen und trotz eingeschränkter Mobilität oder gesundheitlicher Probleme nicht auf medizinisch fundierte Fußpflege verzichten möchten
                 </p>
               </div>
 

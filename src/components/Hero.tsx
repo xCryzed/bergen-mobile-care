@@ -10,6 +10,18 @@ export const Hero = () => {
     }
   };
 
+  const displayCustomerCount = () => {
+    const startCount = 500;
+    const startDate = "2025-01-01";
+    const incrementPerDay = 0.5;
+
+    const start = new Date(startDate);
+    const today = new Date();
+
+    const diffInDays = Math.floor((today.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+    return Math.floor(startCount + diffInDays * incrementPerDay);
+  }
+
   return (
     <section className="relative bg-gradient-to-br from-soft-blue-50 via-white to-warm-beige-50 py-16 md:py-24 overflow-hidden">
       {/* Background decoration */}
@@ -64,11 +76,11 @@ export const Hero = () => {
           {/* Trust indicators */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto animate-fade-in">
             <div className="text-center">
-              <div className="text-2xl font-bold text-soft-blue-600">10+</div>
+              <div className="text-2xl font-bold text-soft-blue-600">{new Date().getFullYear() - 2014}+</div>
               <div className="text-sm text-gray-600">Jahre Erfahrung</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-soft-blue-600">500+</div>
+              <div className="text-2xl font-bold text-soft-blue-600">{displayCustomerCount()}+</div>
               <div className="text-sm text-gray-600">Zufriedene Kunden</div>
             </div>
             <div className="text-center">

@@ -2,15 +2,31 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId: string, retryCount = 0) => {
     const element = document.getElementById(sectionId);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
+      return;
+    }
+
+    if (retryCount === 0) {
+      navigate("/bergen-mobile-care/");
+    }
+
+    if (retryCount < 10) {
+      setTimeout(() => {
+        scrollToSection(sectionId, retryCount + 1);
+      }, 300);
+    } else {
+      console.warn(`Element with ID "${sectionId}" was not found`);
     }
   };
 
