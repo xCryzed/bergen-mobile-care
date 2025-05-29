@@ -22,7 +22,11 @@ export const About = () => {
             <div className="animate-fade-in">
               <div className="bg-gradient-to-br from-soft-blue-100 to-warm-beige-100 rounded-2xl p-8 mb-8">
                 <div className="w-32 h-32 bg-gradient-to-br from-soft-blue-500 to-soft-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-white font-bold text-4xl">RB</span>
+                    <img
+                        src="/bergen-mobile-care/profile-picture.jpg"
+                        alt="Profilbild"
+                        className="w-full h-full object-cover rounded-full"
+                    />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 text-center mb-4">Regina Bergen</h3>
                 <p className="text-center text-soft-blue-600 font-semibold mb-4">Medizinische Fußpflegerin</p>

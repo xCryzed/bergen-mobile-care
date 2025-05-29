@@ -13,7 +13,7 @@ export const Benefits = () => {
     {
       icon: Users,
       title: "Persönliche Betreuung",
-      description: "Ich biete Ihnen eine ausführliche Beratung, eine individuell abgestimmte Behandlung und einen optimalen Rhythmus für langfristig gesunde Füße, denn Ihre Zufriedenheit ist mein Ziel",
+      description: "Ich biete Ihnen eine ausführliche Beratung, eine regelmäßig abgestimmte Behandlung für langfristig gesunde Füße, denn Ihre Zufriedenheit ist mein Ziel",
       color: "sage"
     },
     {
