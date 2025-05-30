@@ -16,10 +16,12 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Portrait and intro */}
-              <div className="animate-fade-in">
-                <div className="bg-gradient-to-br from-soft-blue-100 to-warm-beige-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 mb-8">
+            {/* Main Content */}
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              {/* Left Column: Profile card and text content */}
+              <div className="space-y-8 animate-slide-up">
+                {/* Profile Card */}
+                <div className="bg-gradient-to-br from-soft-blue-100 to-warm-beige-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
                   <div className="w-32 h-32 bg-gradient-to-br from-soft-blue-500 to-soft-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                     <img
                         src="/bergen-mobile-care/profile-picture.jpeg"
@@ -31,21 +33,24 @@ export const About = () => {
                   <p className="text-center text-soft-blue-600 dark:text-soft-blue-400 font-semibold mb-4">Medizinische Fußpflegerin</p>
                 </div>
 
-                <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-clamp-base">
-                    Herzlich willkommen! Ich bin Regina Bergen und bringe seit über 10 Jahren professionelle
-                    Fußpflege direkt zu Ihnen nach Hause. Meine Mission ist es, Ihnen mit einfühlsamer
-                    Betreuung zu gesunden und gepflegten Füßen zu verhelfen.
-                  </p>
-                  <p className="text-clamp-base">
-                    Besonders am Herzen liegt mir die Betreuung von Senioren, Menschen mit eingeschränkter
-                    Mobilität und allen, die sich eine bequeme Behandlung in vertrauter Umgebung wünschen.
-                  </p>
+                {/* Text content */}
+                <div className="animate-fade-in">
+                  <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="text-clamp-base">
+                      Herzlich willkommen! Ich bin Regina Bergen und bringe seit über 10 Jahren professionelle
+                      Fußpflege direkt zu Ihnen nach Hause. Meine Mission ist es, Ihnen mit einfühlsamer
+                      Betreuung zu gesunden und gepflegten Füßen zu verhelfen.
+                    </p>
+                    <p className="text-clamp-base">
+                      Besonders am Herzen liegt mir die Betreuung von Senioren, Menschen mit eingeschränkter
+                      Mobilität und allen, die sich eine bequeme Behandlung in vertrauter Umgebung wünschen.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Qualifications and values */}
-              <div className="space-y-6 animate-slide-up">
+              {/* Right Column: Qualifications section */}
+              <div className="animate-fade-in">
                 <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Qualifikationen & Werte</h3>
 
                 <div className="grid gap-4">
