@@ -14,22 +14,22 @@ const Imprint = () => {
     return (
         <>
             <Header/>
-            <div className="min-h-screen bg-gradient-to-b from-white to-soft-blue-50">
-                <section id="impressum" className="py-20 bg-white">
+            <div className="min-h-screen bg-gradient-to-b from-white to-soft-blue-50 dark:from-gray-900 dark:to-gray-800">
+                <section id="impressum" className="py-20 bg-white dark:bg-gray-900">
                     <div className="container mx-auto px-4 text-center">
                         <div className="max-w-6xl mx-auto">
                             <div className="mb-4">
-                                <h2 className="text-clamp-2xl md:text-clamp-3xl font-bold text-gray-800 mb-4">
+                                <h2 className="text-clamp-2xl md:text-clamp-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
                                     Impressum
                                 </h2>
-                                <p className="text-clamp-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                                <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
                                     Angaben gemäß § 5 DDG (ehemals TMG):
                                 </p>
                             </div>
                         </div>
 
-                        <div className="mt-8 text-gray-700 leading-relaxed">
-                            <h3 className="text-xl font-bold text-gray-800 mb-3">
+                        <div className="mt-8 text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
                                 Unternehmer:
                             </h3>
                             <p className="text-clamp-base">
@@ -37,8 +37,8 @@ const Imprint = () => {
                             </p>
                         </div>
 
-                        <div className="mt-8 text-gray-700 leading-relaxed">
-                            <h3 className="text-xl font-bold text-gray-800 mb-3">
+                        <div className="mt-8 text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
                                 Geschäftsbezeichnung:
                             </h3>
                             <p className="text-clamp-base">
@@ -46,8 +46,8 @@ const Imprint = () => {
                             </p>
                         </div>
 
-                        <div className="mt-8 text-gray-700 leading-relaxed">
-                            <h3 className="text-xl font-bold text-gray-800 mb-3">
+                        <div className="mt-8 text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
                                 Anschrift:
                             </h3>
                             <p className="text-clamp-base">
@@ -61,8 +61,8 @@ const Imprint = () => {
                             </p>
                         </div>
 
-                        <div className="mt-8  text-gray-700 leading-relaxed">
-                            <h3 className="text-xl font-bold text-gray-800 mb-3">
+                        <div className="mt-8  text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
                                 Kontakt:
                             </h3>
                             <p className="text-clamp-base">
@@ -73,8 +73,8 @@ const Imprint = () => {
                             </p>
                         </div>
 
-                        <div className="mt-8 text-gray-700 leading-relaxed">
-                            <h3 className="text-xl font-bold text-gray-800 mb-3">
+                        <div className="mt-8 text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
                                 Berufsbezeichnung
                             </h3>
                             <p className="text-clamp-base">
