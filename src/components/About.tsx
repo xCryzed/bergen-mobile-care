@@ -23,7 +23,7 @@ export const About = () => {
               <div className="bg-gradient-to-br from-soft-blue-100 to-warm-beige-100 rounded-2xl p-8 mb-8">
                 <div className="w-32 h-32 bg-gradient-to-br from-soft-blue-500 to-soft-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                     <img
-                        src="/bergen-mobile-care/profile-picture.jpg"
+                        src="/bergen-mobile-care/profile-picture.jpeg"
                         alt="Profilbild"
                         className="w-full h-full object-cover rounded-full"
                     />

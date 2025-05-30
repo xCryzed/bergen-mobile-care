@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Imprint from "@/pages/Imprint.tsx";
+import { CookieBanner } from "@/components/CookieBanner.tsx";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <CookieBanner />
     </TooltipProvider>
   </QueryClientProvider>
 );

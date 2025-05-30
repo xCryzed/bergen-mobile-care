@@ -1,7 +1,16 @@
 import {Header} from "@/components/Header.tsx";
 import {Footer} from "@/components/Footer.tsx";
+import {useEffect} from "react";
 
 const Imprint = () => {
+    useEffect(() => {
+        const element = document.getElementById("impressum");
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            return;
+        }
+    }, []);
+
     return (
         <>
             <Header/>
