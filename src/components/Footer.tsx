@@ -5,8 +5,11 @@ import { CookieSettings } from "@/components/CookieSettings";
 export const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const handleNavigate = (sectionId: string) =>
-      location.pathname.includes(sectionId) || navigate(sectionId);
+  const handleNavigate = (path: string) => {
+    if (location.pathname !== path) {
+      navigate(path);
+    }
+  };
 
   return (
       <footer className="bg-gray-800 text-white py-16">
@@ -97,8 +100,8 @@ export const Footer = () => {
                 © 2024 Regina Bergen - Mobile Fußpflege. Alle Rechte vorbehalten.
               </p>
               <div className="flex items-center space-x-6">
-                <a onClick={() => handleNavigate("impressum")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Impressum</a>
-                <a className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Datenschutz</a>
+                <a onClick={() => handleNavigate("/bergen-mobile-care/impressum")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Impressum</a>
+                <a onClick={() => handleNavigate("/bergen-mobile-care/datenschutz")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Datenschutz</a>
                 <a className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">AGB</a>
                 <CookieSettings />
               </div>

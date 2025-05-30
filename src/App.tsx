@@ -7,27 +7,29 @@ import { ThemeProvider } from "@/hooks/use-theme";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Imprint from "@/pages/Imprint.tsx";
+import Privacy from "@/pages/Privacy.tsx";
 import { CookieBanner } from "@/components/CookieBanner.tsx";
 
 const queryClient = new QueryClient();
 
 const App = () => (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="system" storageKey="bergen-mobile-care-theme">
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path={'/bergen-mobile-care'} element={<Index />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="/bergen-mobile-care/impressum" element={<Imprint />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-          <CookieBanner />
-        </TooltipProvider>
-      </ThemeProvider>
+        <ThemeProvider defaultTheme="system" storageKey="bergen-mobile-care-theme">
+            <TooltipProvider>
+                <Toaster />
+                <Sonner />
+                <BrowserRouter>
+                    <Routes>
+                        <Route path={'/bergen-mobile-care'} element={<Index />} />
+                        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                        <Route path="/bergen-mobile-care/impressum" element={<Imprint />} />
+                        <Route path="/bergen-mobile-care/datenschutz" element={<Privacy />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </BrowserRouter>
+                <CookieBanner />
+            </TooltipProvider>
+        </ThemeProvider>
     </QueryClientProvider>
 );
 
