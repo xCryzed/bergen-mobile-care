@@ -8,7 +8,11 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export function ThemeToggle() {
+interface ThemeToggleProps {
+    showText?: boolean;
+}
+
+export function ThemeToggle({ showText = false }: ThemeToggleProps) {
     const { theme, setTheme } = useTheme();
 
     const getIcon = () => {
@@ -24,6 +28,19 @@ export function ThemeToggle() {
         }
     };
 
+    const getThemeText = () => {
+        switch (theme) {
+            case "light":
+                return "Hell";
+            case "dark":
+                return "Dunkel";
+            case "system":
+                return "System";
+            default:
+                return "Hell";
+        }
+    };
+
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -33,6 +50,7 @@ export function ThemeToggle() {
                     className="flex items-center gap-2 hover:bg-soft-blue-100 dark:hover:bg-gray-700"
                 >
                     {getIcon()}
+                    {showText && <span className="text-sm font-medium">{getThemeText()}</span>}
                     <ChevronDown className="h-3 w-3" />
                 </Button>
             </DropdownMenuTrigger>

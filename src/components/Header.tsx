@@ -117,8 +117,8 @@ export const Header = () => {
                 >
                   Kontakt
                 </button>
-                <div className="px-4 py-2">
-                  <ThemeToggle />
+                <div className="">
+                  <ThemeToggle showText={true} />
                 </div>
                 <Button
                     onClick={() => scrollToSection('contact')}
