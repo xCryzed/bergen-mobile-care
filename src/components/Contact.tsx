@@ -6,8 +6,10 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Star } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+
+// ... keep existing code (formData state and handleSubmit function)
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -57,6 +59,11 @@ export const Contact = () => {
     }));
   };
 
+  const handleGoogleReview = () => {
+    const googleReviewUrl = "https://g.page/r/CcgHNP9uD2ZPEAE/review";
+    window.open(googleReviewUrl, '_blank');
+  };
+
   return (
       <section id="contact" className="py-20 bg-gradient-to-br from-soft-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
@@ -75,6 +82,7 @@ export const Contact = () => {
               {/* Contact Information */}
               <div className="space-y-8 animate-fade-in">
                 <Card className="p-8 shadow-lg border-l-4 border-l-soft-blue-500 dark:bg-gray-800 dark:border-gray-700">
+                  {/* ... keep existing code (contact info content) */}
                   <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Regina Bergen</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                     Ihre Expertin für mobile Fußpflege in Aachen und Umgebung.
@@ -149,11 +157,22 @@ export const Contact = () => {
                     <MessageCircle className="w-5 h-5 mr-3" />
                     WhatsApp Nachricht
                   </Button>
+
+                  <Button
+                      size="lg"
+                      variant="outline"
+                      className="w-full border-2 border-yellow-500 dark:border-yellow-400 text-yellow-600 dark:text-yellow-400 hover:bg-yellow-500 hover:text-white dark:hover:bg-yellow-500 dark:hover:text-white py-4 rounded-xl font-semibold text-lg"
+                      onClick={handleGoogleReview}
+                  >
+                    <Star className="w-5 h-5 mr-3" />
+                    Google Bewertung abgeben
+                  </Button>
                 </div>
               </div>
 
               {/* Contact Form */}
               <Card className="p-8 shadow-lg animate-slide-up dark:bg-gray-800 dark:border-gray-700">
+                {/* ... keep existing code (form content) */}
                 <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Termin anfragen</h3>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
