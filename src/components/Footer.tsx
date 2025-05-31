@@ -100,8 +100,8 @@ export const Footer = () => {
                 © {new Date().getFullYear()} Regina Bergen - Mobile Fußpflege. Alle Rechte vorbehalten.
               </p>
               <div className="flex items-center space-x-6">
-                <a onClick={() => handleNavigate("/bergen-mobile-care/impressum")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Impressum</a>
-                <a onClick={() => handleNavigate("/bergen-mobile-care/datenschutz")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Datenschutz</a>
+                <a onClick={() => handleNavigate("/impressum")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Impressum</a>
+                <a onClick={() => handleNavigate("/datenschutz")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Datenschutz</a>
                 <a className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">AGB</a>
                 <CookieSettings />
               </div>

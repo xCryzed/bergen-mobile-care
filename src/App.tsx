@@ -20,10 +20,10 @@ const App = () => (
                 <Sonner />
                 <BrowserRouter>
                     <Routes>
-                        <Route path={'/bergen-mobile-care'} element={<Index />} />
+                        <Route path={'/'} element={<Index />} />
                         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                        <Route path="/bergen-mobile-care/impressum" element={<Imprint />} />
-                        <Route path="/bergen-mobile-care/datenschutz" element={<Privacy />} />
+                        <Route path="/impressum" element={<Imprint />} />
+                        <Route path="/datenschutz" element={<Privacy />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </BrowserRouter>

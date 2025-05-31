@@ -25,7 +25,7 @@ export const Header = () => {
         }
 
         if (retryCount === 0) {
-            navigate("/bergen-mobile-care/");
+            navigate("/");
         }
 
         if (retryCount < 10) {
@@ -43,8 +43,8 @@ export const Header = () => {
             <div className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center space-x-3">
-                        <Link to="/bergen-mobile-care">
-                            <img alt="Mobile Fußpflege Regina Bergen Logo" src="/bergen-mobile-care/logo.svg"
+                        <Link to="/">
+                            <img alt="Mobile Fußpflege Regina Bergen Logo" src="/logo.svg"
                                  className="h-16 w-auto object-contain cursor-pointer"
                                  onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
                         </Link>
