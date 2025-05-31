@@ -7,7 +7,7 @@ const Privacy = () => {
     useEffect(() => {
         const element = document.getElementById("datenschutz");
         const isMobile = window.innerWidth < 768;
-        const headerHeight = isMobile ? 475 : 100;
+        const headerHeight = isMobile ? 450 : 100;
         const elementPosition = element.offsetTop - headerHeight;
 
         if (element) {

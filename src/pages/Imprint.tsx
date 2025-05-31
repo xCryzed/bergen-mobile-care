@@ -7,7 +7,7 @@ const Imprint = () => {
     useEffect(() => {
         const element = document.getElementById("impressum");
         const isMobile = window.innerWidth < 768;
-        const headerHeight = isMobile ? 475 : 100;
+        const headerHeight = isMobile ? 450 : 100;
         const elementPosition = element.offsetTop - headerHeight;
 
         if (element) {
