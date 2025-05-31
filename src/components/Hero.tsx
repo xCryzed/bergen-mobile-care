@@ -46,10 +46,15 @@ export const Hero = () => {
               Ich biete medizinische Fußpflege direkt bei Ihnen zu Hause.
             </p>
 
-            {/* Location indicator */}
-            <div className="flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
+            {/* Location indicator - hidden on mobile */}
+            <div className="hidden md:flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
               <MapPin className="w-5 h-5 mr-2" />
               <span className="font-medium">Aachen und Umgebung • Hausbesuche nach Terminvereinbarung</span>
+            </div>
+
+            {/* Mobile location text without icon */}
+            <div className="md:hidden flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
+              <span className="font-medium text-center">Aachen und Umgebung<br />Hausbesuche nach Terminvereinbarung</span>
             </div>
 
             {/* CTA Buttons */}

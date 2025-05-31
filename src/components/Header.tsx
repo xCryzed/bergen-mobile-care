@@ -12,7 +12,14 @@ export const Header = () => {
     const element = document.getElementById(sectionId);
 
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const isMobile = window.innerWidth < 768;
+      const headerHeight = isMobile ? 475 : 100;
+      const elementPosition = element.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
       setIsMenuOpen(false);
       return;
     }
@@ -35,15 +42,7 @@ export const Header = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-soft-blue-500 to-soft-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RB</span>
-              </div>
-              <div>
-                <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 leading-tight">
-                  Regina Bergen
-                </h1>
-                <p className="text-sm text-soft-blue-600 dark:text-soft-blue-400 font-medium">Mobile Fußpflege</p>
-              </div>
+              <img alt="Mobile Fußpflege Regina Bergen Logo" src="/bergen-mobile-care/logo.svg" className="h-16 w-auto object-contain" />
             </div>
 
             {/* Desktop Navigation */}
