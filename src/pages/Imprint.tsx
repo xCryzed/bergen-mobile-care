@@ -6,8 +6,12 @@ import { FileText, User, MapPin, Phone, Mail, Briefcase } from "lucide-react";
 const Imprint = () => {
     useEffect(() => {
         const element = document.getElementById("impressum");
+        const isMobile = window.innerWidth < 768;
+        const headerHeight = isMobile ? 475 : 100;
+        const elementPosition = element.offsetTop - headerHeight;
+
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({ behavior: 'smooth', top: elementPosition });
             return;
         }
     }, []);

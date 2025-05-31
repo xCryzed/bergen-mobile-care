@@ -6,8 +6,12 @@ import { Shield, Lock, Eye, UserCheck, FileText, AlertTriangle } from "lucide-re
 const Privacy = () => {
     useEffect(() => {
         const element = document.getElementById("datenschutz");
+        const isMobile = window.innerWidth < 768;
+        const headerHeight = isMobile ? 475 : 100;
+        const elementPosition = element.offsetTop - headerHeight;
+
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({ behavior: 'smooth', top: elementPosition });
             return;
         }
     }, []);
