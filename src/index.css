@@ -89,10 +89,18 @@
     font-family: 'Open Sans', sans-serif;
   }
 
-  /* Custom Scrollbar Styles */
+  /* Custom Scrollbar Styles - Enhanced for Mobile */
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
+  }
+
+  /* Mobile specific scrollbar width */
+  @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
   }
 
   ::-webkit-scrollbar-track {
@@ -133,14 +141,55 @@
     background: hsl(217.2 32.6% 17.5%);
   }
 
-  /* Firefox Scrollbar */
+  /* Firefox Scrollbar - Enhanced for mobile */
   html {
     scrollbar-width: thin;
     scrollbar-color: hsl(208 100% 47%) hsl(210 40% 96.1%);
   }
 
+  /* Mobile Firefox scrollbar */
+  @media (max-width: 768px) {
+    html {
+      scrollbar-width: thin;
+    }
+  }
+
   .dark html {
     scrollbar-color: hsl(208 100% 55%) hsl(217.2 32.6% 17.5%);
+  }
+
+  /* Additional mobile scrollbar support */
+  @supports (-webkit-overflow-scrolling: touch) {
+    * {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    body, html {
+      scrollbar-width: thin;
+      scrollbar-color: hsl(208 100% 47%) hsl(210 40% 96.1%);
+    }
+
+    .dark body, .dark html {
+      scrollbar-color: hsl(208 100% 55%) hsl(217.2 32.6% 17.5%);
+    }
+  }
+
+  /* Ensure scrollbar visibility on touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: hsl(208 100% 47% / 0.8);
+      border-radius: 4px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: hsl(208 100% 55% / 0.8);
+    }
   }
 }
 
