@@ -2,20 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mobile Fußpflege Regina Bergen - Professionelle Fußpflege in Aachen</title>
+  <title>Bergen Mobile Care</title>
   <script type="text/javascript">
-    var pathSegmentsToKeep = 1;
-
     var l = window.location;
 
     if (!l.search.includes('~and~')) {
-      l.replace(
-              l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-              l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-              l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-              (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-              l.hash
-      );
+
+      var basePath = '/';
+      var currentPath = l.pathname;
+
+
+      if (currentPath.startsWith(basePath + '/')) {
+        var subPath = currentPath.replace(basePath, '');
+        l.replace(
+                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                basePath + '/?/' + subPath.slice(1) +
+                (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                l.hash
+        );
+      } else {
+
+        l.replace(
+                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                basePath + '/'
+        );
+      }
     }
   </script>
 </head>

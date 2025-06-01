@@ -17,15 +17,20 @@
     <script type="text/javascript">
         (function(l) {
             if (l.search[1] === '/' && !l.search.includes('~and~')) {
+                var basePath = '/bergen-mobile-care';
                 var decoded = l.search.slice(1).split('&').map(function(s) {
                     return s.replace(/~and~/g, '&')
                 }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
-                );
+
+                if (l.pathname === basePath + '/' || l.pathname === basePath) {
+                    window.history.replaceState(null, null,
+                        basePath + decoded + l.hash
+                    );
+                }
             }
         }(window.location))
     </script>
+
 </head>
 <body>
 <div id="root"></div>
