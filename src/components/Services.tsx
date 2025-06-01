@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Stethoscope, Sparkles, Heart, AlertTriangle, ShieldPlus, Hand, Brush, Footprints, Slice } from "lucide-react";
+import { Stethoscope, Sparkles, Heart, Info, ShieldPlus, Hand, Brush, Footprints, Slice } from "lucide-react";
 
 export const Services = () => {
   const services = [
@@ -93,11 +93,11 @@ export const Services = () => {
             </div>
 
             {/* Important Notice */}
-            <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-12">
+            <div className="bg-soft-blue-50 dark:bg-soft-blue-900/20 border border-soft-blue-200 dark:border-soft-blue-800 rounded-lg p-4 mb-12">
               <div className="flex items-start space-x-3">
-                <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-                <p className="text-amber-800 dark:text-amber-200 font-medium">
-                  <strong>Wichtiger Hinweis:</strong> Ich bin keine Podologin und führe keine ärztlich verordnete Fußpflege durch
+                <Info className="w-5 h-5 text-soft-blue-600 dark:text-soft-blue-400 flex-shrink-0 mt-0.5" />
+                <p className="text-soft-blue-800 dark:text-soft-blue-200 font-medium">
+                  <strong>Information:</strong> Ich bin keine Podologin und führe keine ärztlich verordnete Fußpflege durch
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ export const Services = () => {
                     <Heart className="w-6 h-6 text-sage-600 dark:text-sage-400" />
                   </div>
                   <h4 className="font-semibold text-gray-800 dark:text-gray-100">Anfahrt kostenlos</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">in Aachen und 15km Umkreis</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">in Aachen und 15 km Umkreis</p>
                 </div>
 
                 <div className="space-y-2">
@@ -145,7 +145,7 @@ export const Services = () => {
                 Jetzt Termin vereinbaren
               </Button>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                Kostenlose Beratung • Flexible Terminzeiten • Auch am Wochenende
+                Kostenlose Beratung • Flexible Terminzeiten
               </p>
             </div>
           </div>

@@ -24,19 +24,19 @@ export const Benefits = () => {
     {
       icon: Shield,
       title: "Hygiene & Sicherheit",
-      description: "Hygiene und Sicherheit haben für mich höchste Priorität. Ich arbeite mit modernen Geräten, hochwertigen Materialien und sterilisierten Instrumenten, um Ihnen eine sichere und professionelle Behandlung zu garantieren",
+      description: "Hygiene und Sicherheit haben für mich höchste Priorität. Ich arbeite mit modernen Geräten, hochwertigen Materialien und sterilisierten Instrumenten, um Ihnen eine sichere und verantwortungsvolle Behandlung zu garantieren",
       color: "soft-blue"
     },
     {
       icon: Home,
-      title: "Komfort zu Hause",
+      title: "Komfort bei Ihnen",
       description: "Genießen Sie Ihre Fußpflege entspannt in Ihrer gewohnten Umgebung. Ohne Hektik, in vertrauter Atmosphäre und ganz ohne Zeitdruck – dort, wo Sie sich am wohlsten fühlen",
       color: "sage"
     },
     {
       icon: Clock,
       title: "Zeitersparnis",
-      description: "Ich biete Ihnen mobile Fußpflege ganz ohne Anfahrtswege, Parkplatzsuche oder Wartezeiten. Sie sparen wertvolle Zeit und vermeiden stressige Wege – für mehr Flexibilität und einen entspannten Alltag",
+      description: "Sie haben keine mühsamen Anfahrtswege, Parkplatzsuche oder Wartezeiten. Sie sparen wertvolle Zeit – für einen entspannten Alltag",
       color: "warm-beige"
     }
   ];
@@ -51,7 +51,10 @@ export const Benefits = () => {
                 Warum mobile Fußpflege?
               </h2>
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Entdecken Sie die Vorteile der professionellen Fußpflege direkt bei Ihnen zu Hause
+                Entdecken Sie die Vorteile der professionellen Fußpflege direkt bei Ihnen
+              </p>
+              <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Zuhause · Seniorenheim · Krankenhaus · Kurzzeitpflege · Hospiz
               </p>
             </div>
 
@@ -117,7 +120,7 @@ export const Benefits = () => {
                   </div>
                   <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Senioren</h4>
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                    Die regelmäßige Pflege schätzen und trotz eingeschränkter Mobilität oder gesundheitlicher Probleme nicht auf medizinisch fundierte Fußpflege verzichten möchten
+                    Die regelmäßige Pflege schätzen und trotz eventuell eingeschränkter Mobilität oder gesundheitlichen Probleme auf Fußpflege nicht verzichten wollen
                   </p>
                 </div>
 
