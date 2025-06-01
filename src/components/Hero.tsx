@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Heart } from "lucide-react";
+import { displayCustomerCount } from "@/lib/utils.ts";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -8,18 +9,6 @@ export const Hero = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  const displayCustomerCount = () => {
-    const startCount = 500;
-    const startDate = "2025-01-01";
-    const incrementPerDay = 0.5;
-
-    const start = new Date(startDate);
-    const today = new Date();
-
-    const diffInDays = Math.floor((today.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-    return Math.floor(startCount + diffInDays * incrementPerDay);
-  }
 
   return (
       <section className="relative bg-gradient-to-br from-soft-blue-50 via-white to-warm-beige-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-16 md:py-24 overflow-hidden">

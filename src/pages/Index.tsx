@@ -3,11 +3,11 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Services } from "@/components/Services";
 import { Benefits } from "@/components/Benefits";
-import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { StickyCallButton } from "@/components/StickyCallButton";
+import { GoogleReviews } from "@/components/GoogleReviews.tsx";
 
 const Index = () => {
     return (
@@ -18,7 +18,7 @@ const Index = () => {
                 <About />
                 <Services />
                 <Benefits />
-                <Testimonials />
+                <GoogleReviews />
                 <FAQ />
                 <Contact />
             </main>
