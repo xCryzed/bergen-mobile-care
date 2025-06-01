@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,8 +7,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/hooks/use-toast";
+import { initEmailJS, sendEmail } from "@/lib/emailjs";
+import { useNavigate } from "react-router-dom";
 
 export const ContactForm = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         phone: "",
@@ -19,8 +22,15 @@ export const ContactForm = () => {
         privacy: false
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    useEffect(() => {
+        initEmailJS();
+    }, []);
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
         if (!formData.privacy) {
             toast({
                 title: "Datenschutz erforderlich",
@@ -30,23 +40,50 @@ export const ContactForm = () => {
             return;
         }
 
-        toast({
-            title: "Nachricht gesendet!",
-            description: "Vielen Dank für Ihre Anfrage. Ich melde mich schnellstmöglich bei Ihnen.",
-        });
+        setIsSubmitting(true);
 
-        console.log("Kontaktformular gesendet:", formData);
+        const templateParams = {
+            from_name: formData.name,
+            from_phone: formData.phone,
+            from_email: formData.email || 'Keine E-Mail angegeben',
+            preferred_service: formData.preferredTime || 'Nicht angegeben',
+            callback_time: formData.callbackTime || 'Nicht angegeben',
+            message: formData.message || 'Keine zusätzliche Nachricht',
+            to_name: 'Regina Bergen'
+        };
 
-        // Reset form
-        setFormData({
-            name: "",
-            phone: "",
-            email: "",
-            preferredTime: "",
-            callbackTime: "",
-            message: "",
-            privacy: false
-        });
+        try {
+            const result = await sendEmail(templateParams);
+
+            if (result.success) {
+                toast({
+                    title: "Nachricht erfolgreich gesendet!",
+                    description: "Vielen Dank für Ihre Anfrage. Ich melde mich schnellstmöglich bei Ihnen.",
+                });
+
+                // Formular zurücksetzen
+                setFormData({
+                    name: "",
+                    phone: "",
+                    email: "",
+                    preferredTime: "",
+                    callbackTime: "",
+                    message: "",
+                    privacy: false
+                });
+            } else {
+                throw new Error('EmailJS Error');
+            }
+        } catch (error) {
+            console.error("Fehler beim Senden der E-Mail:", error);
+            toast({
+                title: "Fehler beim Senden",
+                description: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie direkt an.",
+                variant: "destructive"
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -172,7 +209,7 @@ export const ContactForm = () => {
                     />
                     <Label htmlFor="privacy" className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                         Ich stimme der Verarbeitung meiner Daten gemäß der{" "}
-                        <a href="#" className="text-soft-blue-600 dark:text-soft-blue-400 hover:text-soft-blue-700 dark:hover:text-soft-blue-300 underline">
+                        <a className="text-soft-blue-600 dark:text-soft-blue-400 hover:text-soft-blue-700 dark:hover:text-soft-blue-300 underline cursor-pointer" onClick={() => navigate("datenschutz")}>
                             Datenschutzerklärung
                         </a>{" "}
                         zu. *
@@ -182,9 +219,10 @@ export const ContactForm = () => {
                 <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-soft-blue-600 hover:bg-soft-blue-700 dark:bg-soft-blue-600 dark:hover:bg-soft-blue-700 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                    disabled={isSubmitting}
+                    className="w-full bg-soft-blue-600 hover:bg-soft-blue-700 dark:bg-soft-blue-600 dark:hover:bg-soft-blue-700 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                    Termin anfragen
+                    {isSubmitting ? "Wird gesendet..." : "Termin anfragen"}
                 </Button>
             </form>
         </Card>
