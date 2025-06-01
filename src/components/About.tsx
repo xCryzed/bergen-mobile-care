@@ -12,7 +12,7 @@ export const About = () => {
                 Über mich
               </h2>
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Mit Leidenschaft und Fachwissen für Ihre Fußgesundheit – direkt bei Ihnen zu Hause
+                Mit Fachwissen und Sorgfalt für Ihre Fußgesundheit
               </p>
             </div>
 
@@ -30,16 +30,19 @@ export const About = () => {
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 text-center mb-4">Regina Bergen</h3>
-                  <p className="text-center text-soft-blue-600 dark:text-soft-blue-400 font-semibold mb-4">Medizinische Fußpflegerin</p>
+                  <p className="text-center text-soft-blue-600 dark:text-soft-blue-400 font-semibold mb-4">Zertifzierte Fachfußpflegerin</p>
                 </div>
 
                 {/* Text content */}
                 <div className="animate-fade-in">
                   <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                     <p className="text-clamp-base">
-                      Herzlich willkommen! Ich bin Regina Bergen und bringe seit über 10 Jahren professionelle
-                      Fußpflege direkt zu Ihnen nach Hause. Meine Mission ist es, Ihnen mit einfühlsamer
-                      Betreuung zu gesunden und gepflegten Füßen zu verhelfen.
+                      Herzlich willkommen! Ich bin Regina Bergen und seit mehr als {new Date().getFullYear() - 2014} Jahren
+                      mobile Fußpflegerin mit zertifiziertem Hintergrundwissen aus meiner
+                      Ausbildung zur Fachfußpflegerin und staatlich examinierte Altenpflegehelferin
+                      – ich bin keine Podologin. Besonders am Herzen liegt mir die Betreuung von
+                      Senioren, Menschen mit eingeschränkter Mobilität und allen, die sich eine
+                      bequeme Behandlung in vertrauter Umgebung wünschen.
                     </p>
                     <p className="text-clamp-base">
                       Besonders am Herzen liegt mir die Betreuung von Senioren, Menschen mit eingeschränkter
@@ -60,8 +63,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Zertifizierte Ausbildung</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Staatlich anerkannte Ausbildung zur medizinischen Fußpflegerin mit
-                          regelmäßigen Fortbildungen
+                          Staatlich examinierte Altenpflegehelferin seit 2010, Fußpflegeexpertin seit 2014
                         </p>
                       </div>
                     </div>
@@ -73,8 +75,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Einfühlsame Betreuung</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Besondere Sensibilität für die Bedürfnisse älterer Menschen und
-                          Diabetiker
+                          Besondere Sensibilität für die Bedürfnisse älterer Menschen und hilfebedürftiger Menschen
                         </p>
                       </div>
                     </div>
@@ -86,8 +87,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Höchste Hygiene</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Sterile Instrumente und modernste Hygienemaßnahmen für Ihre
-                          Sicherheit
+                          Professionelle Fußpflege unter Einhaltung strengster Hygienestandards
                         </p>
                       </div>
                     </div>
@@ -99,8 +99,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Flexible Termine</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Termine auch am Wochenende und nach Ihren individuellen
-                          Bedürfnissen
+                          Termine gestalte ich flexibel und individuell – nach persönlicher Vereinbarung
                         </p>
                       </div>
                     </div>

@@ -8,6 +8,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { StickyCallButton } from "@/components/StickyCallButton";
 import { GoogleReviews } from "@/components/GoogleReviews.tsx";
+import { Philosophy } from "@/components/Philosophy.tsx";
 
 const Index = () => {
     return (
@@ -16,6 +17,7 @@ const Index = () => {
             <main>
                 <Hero />
                 <About />
+                <Philosophy />
                 <Services />
                 <Benefits />
                 <GoogleReviews />

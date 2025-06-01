@@ -1,50 +1,41 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Scissors, Droplets, Stethoscope, Sparkles, Heart, Euro } from "lucide-react";
+import { Stethoscope, Sparkles, Heart, AlertTriangle, ShieldPlus, Hand, Brush, Footprints, Slice } from "lucide-react";
 
 export const Services = () => {
   const services = [
     {
-      icon: Sparkles,
-      title: "Basispflege",
-      description: "Fußbad, Nägel schneiden und feilen, Hornhautentfernung",
-      price: "45€",
-      duration: "ca. 45 Min.",
+      icon: Footprints,
+      title: "Basis Fußpflege",
+      description: "Schneiden und Formen der Nägel, Reinigung des Nagelfalzes, Hornhautentfernung, Fußmassage",
       popular: true
     },
     {
-      icon: Scissors,
-      title: "Medizinische Fußpflege",
-      description: "Behandlung von Hühneraugen, eingewachsenen Nägeln, Schwielen",
-      price: "55€",
-      duration: "ca. 60 Min.",
+      icon: Slice,
+      title: "Erweiterte Fußpflege",
+      description: "Behandlung von Hühneraugen, Schwielen und eingewachsenen Nägeln, inkl. Basis Fußpflege",
       popular: false
     },
     {
-      icon: Stethoscope,
-      title: "Diabetiker-Fußpflege",
-      description: "Spezielle Behandlung für Diabetiker mit besonderer Vorsicht",
-      price: "60€",
-      duration: "ca. 60 Min.",
+      icon: ShieldPlus,
+      title: "Nagelprothetik",
+      description: "Anfertigung künstlicher Nägel bei beschädigten oder teilweise fehlenden Nagelplatten",
       popular: false
     },
     {
-      icon: Droplets,
-      title: "Pflege & Massage",
-      description: "Entspannende Fußmassage mit pflegenden Cremes",
-      price: "35€",
-      duration: "ca. 30 Min.",
+      icon: Hand,
+      title: "Maniküre",
+      description: "Kürzen und Formen der Fingernägel und Glätten der Nageloberfläche",
       popular: false
     },
     {
-      icon: Heart,
-      title: "Wellness-Paket",
-      description: "Kombination aus Basispflege und entspannender Massage",
-      price: "65€",
-      duration: "ca. 75 Min.",
+      icon: Brush,
+      title: "Lackieren",
+      description: "Auftragen von Farblack auf Finger- oder Fußnägel nach Wunsch",
       popular: false
     }
   ];
+
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -63,7 +54,8 @@ export const Services = () => {
                 Meine Leistungen
               </h2>
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Professionelle Fußpflege mit modernsten Methoden – bequem bei Ihnen zu Hause
+                Fachgerechte Fußpflege mit modernsten Methoden – bei Ihnen zu Hause - oder dort, wo Sie
+                sich gerade aktuell in Aachen aufhalten
               </p>
             </div>
 
@@ -94,18 +86,20 @@ export const Services = () => {
 
                         <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">{service.title}</h3>
                         <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">{service.description}</p>
-
-                        <div className="space-y-2 mb-4">
-                          <div className="flex items-center justify-center text-2xl font-bold text-soft-blue-600 dark:text-soft-blue-400">
-                            <Euro className="w-5 h-5 mr-1" />
-                            {service.price}
-                          </div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">{service.duration}</p>
-                        </div>
                       </div>
                     </Card>
                 );
               })}
+            </div>
+
+            {/* Important Notice */}
+            <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-12">
+              <div className="flex items-start space-x-3">
+                <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+                <p className="text-amber-800 dark:text-amber-200 font-medium">
+                  <strong>Wichtiger Hinweis:</strong> Ich bin keine Podologin und führe keine ärztlich verordnete Fußpflege durch
+                </p>
+              </div>
             </div>
 
             {/* Additional Info */}

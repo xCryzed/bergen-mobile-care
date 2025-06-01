@@ -20,30 +20,30 @@ export const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full border border-soft-blue-200 dark:border-gray-600 shadow-sm mb-8 animate-fade-in">
               <Heart className="w-4 h-4 text-soft-blue-600 dark:text-soft-blue-400 mr-2" />
-              <span className="text-soft-blue-700 dark:text-soft-blue-300 font-medium text-sm">Einfühlsam • Professionell • Zuverlässig</span>
+              <span className="text-soft-blue-700 dark:text-soft-blue-300 font-medium text-sm">Empathisch • Professionell • Zuverlässig</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-clamp-3xl md:text-clamp-4xl font-bold text-gray-800 dark:text-gray-100 mb-6 leading-tight animate-slide-up">
               <span className="block">Mobile Fußpflege in Aachen</span>
-              <span className="text-soft-blue-600 dark:text-soft-blue-400">Regina Bergen kommt zu Ihnen nach Hause</span>
+              <span className="text-soft-blue-600 dark:text-soft-blue-400">Regina Bergen kommt zu Ihnen</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-clamp-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto animate-fade-in text-balance">
-              Einfühlsam, professionell & bequem – für gepflegte Füße und mehr Lebensqualität.
-              Ich biete medizinische Fußpflege direkt bei Ihnen zu Hause.
+              Gepflegte Füße fördern, erhalten oder steigern die Lebensqualität
+
             </p>
 
             {/* Location indicator - hidden on mobile */}
             <div className="hidden md:flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
               <MapPin className="w-5 h-5 mr-2" />
-              <span className="font-medium">Aachen und Umgebung • Hausbesuche nach Terminvereinbarung</span>
+              <span className="font-medium">Aachen und Umgebung • Termine nur nach Vereinbarung</span>
             </div>
 
             {/* Mobile location text without icon */}
             <div className="md:hidden flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
-              <span className="font-medium text-center">Aachen und Umgebung<br />Hausbesuche nach Terminvereinbarung</span>
+              <span className="font-medium text-center">Aachen und Umgebung<br />Termine nur nach Vereinbarung</span>
             </div>
 
             {/* CTA Buttons */}
