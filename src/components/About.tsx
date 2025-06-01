@@ -37,12 +37,11 @@ export const About = () => {
                 <div className="animate-fade-in">
                   <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                     <p className="text-clamp-base">
-                      Herzlich willkommen! Ich bin Regina Bergen und seit mehr als {new Date().getFullYear() - 2014} Jahren
-                      mobile Fußpflegerin mit zertifiziertem Hintergrundwissen aus meiner
-                      Ausbildung zur Fachfußpflegerin und staatlich examinierte Altenpflegehelferin
-                      – ich bin keine Podologin. Besonders am Herzen liegt mir die Betreuung von
-                      Senioren, Menschen mit eingeschränkter Mobilität und allen, die sich eine
-                      bequeme Behandlung in vertrauter Umgebung wünschen.
+                      Willkommen – Ihre Fußpflege in besten Händen
+                    </p>
+                    <p className="text-clamp-base">
+                      Ich bin Regina Bergen, seit mehr als 11 Jahren mobile Fachfußpflegerin mit
+                      zertifizierter Ausbildung und staatlich examinierte Altenpflegehelferin (ich bin keine Podologin).
                     </p>
                     <p className="text-clamp-base">
                       Besonders am Herzen liegt mir die Betreuung von Senioren, Menschen mit eingeschränkter
