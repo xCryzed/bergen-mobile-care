@@ -102,7 +102,6 @@ export const Footer = () => {
               <div className="flex items-center space-x-6">
                 <a onClick={() => handleNavigate("/impressum")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Impressum</a>
                 <a onClick={() => handleNavigate("/datenschutz")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Datenschutz</a>
-                <a className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">AGB</a>
                 <CookieSettings />
               </div>
             </div>
