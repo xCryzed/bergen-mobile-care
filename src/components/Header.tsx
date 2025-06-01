@@ -62,7 +62,7 @@ export const Header = () => {
                             onClick={() => scrollToSection('philosophy')}
                             className="text-gray-700 dark:text-gray-300 hover:text-soft-blue-600 dark:hover:text-soft-blue-400 font-medium transition-colors"
                         >
-                            Meine Philosophie
+                            Philosophie
                         </button>
                         <button
                             onClick={() => scrollToSection('services')}
@@ -115,7 +115,7 @@ export const Header = () => {
                             onClick={() => scrollToSection('philosophy')}
                             className="block w-full text-left py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-soft-blue-50 dark:hover:bg-gray-800 rounded-lg font-medium transition-colors"
                         >
-                            Meine Philosophie
+                            Philosophie
                         </button>
                         <button
                             onClick={() => scrollToSection('services')}
