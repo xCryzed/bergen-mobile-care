@@ -1,12 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 import { useTheme } from "@/hooks/use-theme";
-import { Moon, Sun, Monitor, ChevronDown } from "lucide-react";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface ThemeToggleProps {
     showText?: boolean;
@@ -14,69 +9,72 @@ interface ThemeToggleProps {
 
 export function ThemeToggle({ showText = false }: ThemeToggleProps) {
     const { theme, setTheme } = useTheme();
+    const [isDark, setIsDark] = useState(false);
 
-    const getIcon = () => {
-        switch (theme) {
-            case "light":
-                return <Sun className="h-4 w-4" />;
-            case "dark":
-                return <Moon className="h-4 w-4" />;
-            case "system":
-                return <Monitor className="h-4 w-4" />;
-            default:
-                return <Sun className="h-4 w-4" />;
+    useEffect(() => {
+        if (theme === "dark") {
+            setIsDark(true);
+        } else if (theme === "light") {
+            setIsDark(false);
+        } else if (theme === "system") {
+            // Für System-Theme prüfen wir die tatsächliche Präferenz
+            const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            setIsDark(systemPrefersDark);
         }
+    }, [theme]);
+
+    const handleThemeChange = (checked: boolean) => {
+        setTheme(checked ? "dark" : "light");
+        setIsDark(checked);
     };
 
-    const getThemeText = () => {
-        switch (theme) {
-            case "light":
-                return "Hell";
-            case "dark":
-                return "Dunkel";
-            case "system":
-                return "System";
-            default:
-                return "Hell";
-        }
-    };
+    const currentModeText = isDark ? "Dunkler Modus" : "Heller Modus";
+    const switchLabel = `Theme wechseln zu ${isDark ? "hellem" : "dunklem"} Modus`;
 
     return (
-        <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <Button
-                    variant="ghost"
-                    size="sm"
-                    className="flex items-center gap-2 hover:bg-soft-blue-100 dark:hover:bg-gray-700"
-                >
-                    {getIcon()}
-                    {showText && <span className="text-sm font-medium">{getThemeText()}</span>}
-                    <ChevronDown className="h-3 w-3" />
-                </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="bg-white dark:bg-gray-800 border dark:border-gray-700">
-                <DropdownMenuItem
-                    onClick={() => setTheme("light")}
-                    className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200"
-                >
-                    <Sun className="h-4 w-4" />
-                    <span>Hell</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                    onClick={() => setTheme("dark")}
-                    className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200"
-                >
-                    <Moon className="h-4 w-4" />
-                    <span>Dunkel</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                    onClick={() => setTheme("system")}
-                    className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200"
-                >
-                    <Monitor className="h-4 w-4" />
-                    <span>System</span>
-                </DropdownMenuItem>
-            </DropdownMenuContent>
-        </DropdownMenu>
+        <div className="flex items-center gap-3">
+            {/* Icon für aktuellen Modus */}
+            <div
+                className="flex items-center justify-center w-8 h-8"
+                aria-hidden="true"
+            >
+                {isDark ? (
+                    <Moon className="h-4 w-4 text-soft-blue-600 dark:text-soft-blue-400" />
+                ) : (
+                    <Sun className="h-4 w-4 text-soft-blue-600 dark:text-soft-blue-400" />
+                )}
+            </div>
+
+            {/* Switch Element */}
+            <div className="flex items-center gap-2">
+                <Switch
+                    checked={isDark}
+                    onCheckedChange={handleThemeChange}
+                    aria-label={switchLabel}
+                    aria-describedby={showText ? "theme-description" : undefined}
+                    className="data-[state=checked]:bg-soft-blue-600 data-[state=unchecked]:bg-gray-300 dark:data-[state=unchecked]:bg-gray-600"
+                />
+
+                {/* Text-Label wenn gewünscht */}
+                {showText && (
+                    <div className="flex flex-col">
+                        <span
+                            id="theme-description"
+                            className="text-sm font-medium text-gray-700 dark:text-gray-300"
+                        >
+                            {currentModeText}
+                        </span>
+                        <span className="text-xs text-gray-500 dark:text-gray-400">
+                            Tippen zum Wechseln
+                        </span>
+                    </div>
+                )}
+            </div>
+
+            <span className="sr-only">
+                Aktueller Modus: {currentModeText}.
+                {isDark ? "Wechseln Sie zum hellen Modus für bessere Lesbarkeit bei Tageslicht." : "Wechseln Sie zum dunklen Modus für bessere Lesbarkeit bei schwachem Licht."}
+            </span>
+        </div>
     );
 }
