@@ -155,12 +155,13 @@ export const ContactForm = () => {
                                             </SelectTrigger>
                                         </FormControl>
                                         <SelectContent className="dark:bg-gray-800 dark:border-gray-700">
-                                            <SelectItem value="basispflege" className="dark:text-gray-100 dark:hover:bg-gray-700">Basispflege (45€)</SelectItem>
-                                            <SelectItem value="medizinisch" className="dark:text-gray-100 dark:hover:bg-gray-700">Medizinische Fußpflege (55€)</SelectItem>
-                                            <SelectItem value="diabetiker" className="dark:text-gray-100 dark:hover:bg-gray-700">Diabetiker-Fußpflege (60€)</SelectItem>
-                                            <SelectItem value="massage" className="dark:text-gray-100 dark:hover:bg-gray-700">Pflege & Massage (35€)</SelectItem>
-                                            <SelectItem value="wellness" className="dark:text-gray-100 dark:hover:bg-gray-700">Wellness-Paket (65€)</SelectItem>
-                                            <SelectItem value="beratung" className="dark:text-gray-100 dark:hover:bg-gray-700">Erst Beratung gewünscht</SelectItem>
+                                            <SelectItem value="Basis Fußpflege" className="dark:text-gray-100 dark:hover:bg-gray-700">Basis Fußpflege</SelectItem>
+                                            <SelectItem value="Erweiterte Fußpflege" className="dark:text-gray-100 dark:hover:bg-gray-700">Erweiterte Fußpflege</SelectItem>
+                                            <SelectItem value="Nagelprothetik" className="dark:text-gray-100 dark:hover:bg-gray-700">Nagelprothetik</SelectItem>
+                                            <SelectItem value="Maniküre" className="dark:text-gray-100 dark:hover:bg-gray-700">Maniküre</SelectItem>
+                                            <SelectItem value="Lackieren" className="dark:text-gray-100 dark:hover:bg-gray-700">Lackieren</SelectItem>
+                                            <SelectItem value="Beratung" className="dark:text-gray-100 dark:hover:bg-gray-700">Beratung</SelectItem>
+                                            <SelectItem value="Erstgespräch" className="dark:text-gray-100 dark:hover:bg-gray-700">Erstgespräch</SelectItem>
                                         </SelectContent>
                                     </Select>
                                     <FormMessage />
@@ -183,11 +184,11 @@ export const ContactForm = () => {
                                             </SelectTrigger>
                                         </FormControl>
                                         <SelectContent className="dark:bg-gray-800 dark:border-gray-700">
-                                            <SelectItem value="morgens" className="dark:text-gray-100 dark:hover:bg-gray-700">Morgens (8:00-12:00)</SelectItem>
-                                            <SelectItem value="mittags" className="dark:text-gray-100 dark:hover:bg-gray-700">Mittags (12:00-15:00)</SelectItem>
-                                            <SelectItem value="nachmittags" className="dark:text-gray-100 dark:hover:bg-gray-700">Nachmittags (15:00-18:00)</SelectItem>
-                                            <SelectItem value="abends" className="dark:text-gray-100 dark:hover:bg-gray-700">Abends (18:00-20:00)</SelectItem>
-                                            <SelectItem value="wochenende" className="dark:text-gray-100 dark:hover:bg-gray-700">Am Wochenende</SelectItem>
+                                            <SelectItem value="Morgens (8:00-12:00)" className="dark:text-gray-100 dark:hover:bg-gray-700">Morgens (8:00-12:00)</SelectItem>
+                                            <SelectItem value="Mittags (12:00-15:00)" className="dark:text-gray-100 dark:hover:bg-gray-700">Mittags (12:00-15:00)</SelectItem>
+                                            <SelectItem value="Nachmittags (15:00-18:00)" className="dark:text-gray-100 dark:hover:bg-gray-700">Nachmittags (15:00-18:00)</SelectItem>
+                                            <SelectItem value="Abends (18:00-20:00)" className="dark:text-gray-100 dark:hover:bg-gray-700">Abends (18:00-20:00)</SelectItem>
+                                            <SelectItem value="Am Wochenende" className="dark:text-gray-100 dark:hover:bg-gray-700">Am Wochenende</SelectItem>
                                         </SelectContent>
                                     </Select>
                                     <FormMessage />

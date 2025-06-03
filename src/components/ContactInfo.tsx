@@ -51,8 +51,7 @@ export const ContactInfo = () => {
                     </div>
                     <div>
                         <p className="font-semibold text-gray-800 dark:text-gray-100">Termine</p>
-                        <p className="text-gray-600 dark:text-gray-300">Mo-Sa 8:00-18:00</p>
-                        <p className="text-gray-600 dark:text-gray-300">Auch Wochenende möglich</p>
+                        <p className="text-gray-600 dark:text-gray-300">Mo-Fr 8:00-17:00</p>
                     </div>
                 </div>
             </div>

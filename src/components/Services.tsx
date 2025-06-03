@@ -93,12 +93,23 @@ export const Services = () => {
             </div>
 
             {/* Important Notice */}
-            <div className="bg-soft-blue-50 dark:bg-soft-blue-900/20 border border-soft-blue-200 dark:border-soft-blue-800 rounded-lg p-4 mb-12">
-              <div className="flex items-start space-x-3">
-                <Info className="w-5 h-5 text-soft-blue-600 dark:text-soft-blue-400 flex-shrink-0 mt-0.5" />
-                <p className="text-soft-blue-800 dark:text-soft-blue-200 font-medium">
-                  <strong>Information:</strong> Ich bin keine Podologin und führe keine ärztlich verordnete Fußpflege durch
-                </p>
+            <div className="relative mb-12">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-6 border-l-4 border-blue-400 dark:border-blue-500 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-blue-100 dark:bg-blue-800 rounded-full flex items-center justify-center">
+                      <Info className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
+                      Information
+                    </h4>
+                    <p className="text-blue-700 dark:text-blue-300 leading-relaxed">
+                      Ich bin keine Podologin und führe keine ärztlich verordnete Fußpflege durch
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
