@@ -20,7 +20,11 @@ export const Footer = () => {
               <div className="md:col-span-2">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-soft-blue-500 to-soft-blue-600 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">RB</span>
+                    <img
+                        src="/profile-picture.webp"
+                        alt="Profilbild"
+                        className="w-full h-full object-cover rounded-full"
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold">Regina Bergen</h3>
