@@ -11,9 +11,11 @@ import { toast } from "@/hooks/use-toast";
 import { initEmailJS, sendEmail } from "@/lib/emailjs";
 import { contactFormSchema, type ContactFormData } from "@/lib/validations";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const navigate = useNavigate()
 
     const form = useForm<ContactFormData>({
         resolver: zodResolver(contactFormSchema),
@@ -233,7 +235,7 @@ export const ContactForm = () => {
                                 <div className="space-y-1 leading-none">
                                     <FormLabel className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                                         Ich stimme der Verarbeitung meiner Daten gemäß der{" "}
-                                        <a href="#" className="text-soft-blue-600 dark:text-soft-blue-400 hover:text-soft-blue-700 dark:hover:text-soft-blue-300 underline">
+                                        <a className="text-soft-blue-600 dark:text-soft-blue-400 hover:text-soft-blue-700 dark:hover:text-soft-blue-300 underline cursor-pointer" onClick={() => navigate("datenschutz")}>
                                             Datenschutzerklärung
                                         </a>{" "}
                                         zu. *

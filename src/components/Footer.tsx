@@ -1,5 +1,5 @@
 import { Heart, MapPin, Phone, Mail } from "lucide-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate} from "react-router-dom";
 import { CookieSettings } from "@/components/CookieSettings";
 
 export const Footer = () => {
@@ -103,7 +103,15 @@ export const Footer = () => {
                 <div className="flex items-center text-xs text-gray-500">
                   <span>Developed with</span>
                   <Heart className="w-3 h-3 mx-1 text-red-500 fill-current animate-pulse" />
-                  <span>by Nino Bergen</span>
+                  <span>by</span>
+                  <a
+                      href="https://de.linkedin.com/in/nino-bergen-676139219"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-1 text-soft-blue-300 transition-colors flex items-center"
+                  >
+                    Nino Bergen
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-6">
