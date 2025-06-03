@@ -59,7 +59,7 @@ export const Footer = () => {
                     <MapPin className="w-5 h-5 text-soft-blue-400 mt-1" />
                     <div>
                       <p>Einsatzgebiet:</p>
-                      <p className="text-sm text-gray-400">Aachen und 20 km Umkreis</p>
+                      <p className="text-sm text-gray-400">Aachen und 15 km Umkreis</p>
                     </div>
                   </div>
                 </div>
@@ -70,10 +70,10 @@ export const Footer = () => {
                 <h4 className="text-lg font-semibold mb-4">Leistungen</h4>
                 <ul className="space-y-2 text-sm">
                   <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Basispflege</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Medizinische Fußpflege</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Diabetiker-Fußpflege</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Pflege & Massage</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Wellness-Pakete</li>
+                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Erweiterte Fußpflege</li>
+                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Nagelprothetik</li>
+                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Maniküre</li>
+                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Lackieren</li>
                 </ul>
               </div>
             </div>
@@ -84,9 +84,9 @@ export const Footer = () => {
                 <h4 className="text-lg font-semibold mb-4 text-soft-blue-300">Mobile Fußpflege in Aachen</h4>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Regina Bergen bietet professionelle mobile Fußpflege in Aachen und Umgebung. Als erfahrene
-                  medizinische Fußpflegerin komme ich direkt zu Ihnen nach Hause und sorge für gepflegte,
+                  Fachfußpflegerin komme ich direkt zu Ihnen nach Hause und sorge für gepflegte,
                   gesunde Füße. Meine Leistungen umfassen die komplette Fußpflege von der Basisbehandlung
-                  bis zur speziellen Diabetiker-Fußpflege. Besonders Senioren, Menschen mit eingeschränkter
+                  bis zur erweiterten Fußpflege. Besonders Senioren, Menschen mit eingeschränkter
                   Mobilität und Berufstätige schätzen den Komfort der mobilen Fußpflege. Vereinbaren Sie
                   noch heute Ihren Termin für professionelle Fußpflege in Aachen, Herzogenrath, Würselen
                   und der gesamten Städteregion Aachen.
@@ -96,9 +96,16 @@ export const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-sm text-gray-400 mb-4 md:mb-0">
-                © {new Date().getFullYear()} Regina Bergen - Mobile Fußpflege. Alle Rechte vorbehalten.
-              </p>
+              <div className="flex flex-col items-center md:items-start mb-4 md:mb-0">
+                <p className="text-sm text-gray-400 mb-2">
+                  © {new Date().getFullYear()} Regina Bergen - Mobile Fußpflege. Alle Rechte vorbehalten.
+                </p>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>Developed with</span>
+                  <Heart className="w-3 h-3 mx-1 text-red-500 fill-current animate-pulse" />
+                  <span>by Nino Bergen</span>
+                </div>
+              </div>
               <div className="flex items-center space-x-6">
                 <a onClick={() => handleNavigate("/impressum")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Impressum</a>
                 <a onClick={() => handleNavigate("/datenschutz")} className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer">Datenschutz</a>

@@ -49,7 +49,7 @@ export function CookieSettings() {
                     title="Cookie-Einstellungen verwalten"
                 >
                     <Cookie className="h-4 w-4" />
-                    <span className="hidden sm:inline">Cookies</span>
+                    <span className="sm:inline">Cookies</span>
                 </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-md bg-white dark:bg-gray-800">
