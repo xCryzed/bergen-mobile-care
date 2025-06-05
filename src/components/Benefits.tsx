@@ -30,7 +30,7 @@ export const Benefits = () => {
     {
       icon: Home,
       title: "Komfort bei Ihnen",
-      description: "Genießen Sie Ihre Fußpflege entspannt in Ihrer gewohnten Umgebung. Ohne Hektik, in vertrauter Atmosphäre und ganz ohne Zeitdruck – dort, wo Sie sich am wohlsten fühlen",
+      description: "Genießen Sie Ihre Fußpflege entspannt in Ihrer gewohnten Umgebung. Ohne Hektik, in vertrauter Atmosphäre und ganz ohne Zeitdruck dort, wo Sie sich am wohlsten fühlen",
       color: "sage"
     },
     {
