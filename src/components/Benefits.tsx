@@ -36,7 +36,7 @@ export const Benefits = () => {
     {
       icon: Clock,
       title: "Zeitersparnis",
-      description: "Sie haben keine mühsamen Anfahrtswege, Parkplatzsuche oder Wartezeiten. Sie sparen wertvolle Zeit – für einen entspannten Alltag",
+      description: "Sie haben keine mühsamen Anfahrtswege, Parkplatzsuche oder Wartezeiten. Sie sparen wertvolle Zeit für einen entspannten Alltag",
       color: "warm-beige"
     }
   ];
