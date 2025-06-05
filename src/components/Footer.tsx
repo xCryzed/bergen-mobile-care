@@ -87,13 +87,15 @@ export const Footer = () => {
               <div className="bg-gray-700 rounded-lg p-6">
                 <h4 className="text-lg font-semibold mb-4 text-soft-blue-300">Mobile Fußpflege in Aachen</h4>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Regina Bergen bietet professionelle mobile Fußpflege in Aachen und Umgebung. Als erfahrene
-                  Fachfußpflegerin komme ich direkt zu Ihnen nach Hause und sorge für gepflegte,
-                  gesunde Füße. Meine Leistungen umfassen die komplette Fußpflege von der Basisbehandlung
-                  bis zur erweiterten Fußpflege. Besonders Senioren, Menschen mit eingeschränkter
-                  Mobilität und Berufstätige schätzen den Komfort der mobilen Fußpflege. Vereinbaren Sie
-                  noch heute Ihren Termin für professionelle Fußpflege in Aachen, Herzogenrath, Würselen
-                  und der gesamten Städteregion Aachen.
+                  Regina Bergen bietet professionelle mobile Fußpflege in Aachen und
+                  Umgebung. Als erfahrene Fachfußpflegerin komme ich direkt zu Ihnen
+                  nach Hause und sorge für gepflegte Füße. Meine Leistungen umfassen
+                  die komplette Fußpflege von der Basisbehandlung bis zum Lackieren.
+                  Besonders Senioren, Menschen mit eingeschränkter Mobilität und
+                  Berufstätige schätzen den Komfort der mobilen Fußpflege. Vereinbaren
+                  Sie noch heute Ihren Termin für professionelle Fußpflege in Aachen,
+                  Burtscheid, Brand, Eilendorf, Laurensberg, Richterich,
+                  Vaalserquartier, sowie auch in Krankenhäusern und Seniorenheimen.
                 </p>
               </div>
             </div>
