@@ -41,7 +41,7 @@ export const About = () => {
                     </p>
                     <p className="text-clamp-base">
                       Ich bin Regina Bergen, seit mehr als 11 Jahren mobile Fachfußpflegerin mit
-                      zertifizierter Ausbildung und staatlich examinierte Altenpflegehelferin (ich bin keine Podologin).
+                      zertifizierter Ausbildung und staatlich examinierte Altenpflegehelferin.
                     </p>
                     <p className="text-clamp-base">
                       Besonders am Herzen liegt mir die Betreuung von Senioren, Menschen mit eingeschränkter
@@ -62,7 +62,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Zertifizierte Ausbildung</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Staatlich examinierte Altenpflegehelferin seit 2010, Fußpflegeexpertin seit 2014
+                          Staatlich examinierte Altenpflegehelferin seit 2010 und Fußpflegeexpertin seit 2014
                         </p>
                       </div>
                     </div>
@@ -98,7 +98,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Flexible Termine</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Termine gestalte ich flexibel und individuell – nach persönlicher Vereinbarung
+                          Termine gestalte ich flexibel und individuell nach persönlicher Vereinbarung
                         </p>
                       </div>
                     </div>

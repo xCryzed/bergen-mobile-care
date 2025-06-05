@@ -25,7 +25,7 @@ export const Services = () => {
     {
       icon: Hand,
       title: "Maniküre",
-      description: "Kürzen und Formen der Fingernägel und Glätten der Nageloberfläche",
+      description: "Kürzen und Formen der Fingernägel und Polieren der Nageloberfläche",
       popular: false
     },
     {
@@ -125,7 +125,7 @@ export const Services = () => {
                     <Heart className="w-6 h-6 text-sage-600 dark:text-sage-400" />
                   </div>
                   <h4 className="font-semibold text-gray-800 dark:text-gray-100">Anfahrt kostenlos</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">in Aachen und 15 km Umkreis</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">in Aachen und 10 km Umkreis</p>
                 </div>
 
                 <div className="space-y-2">

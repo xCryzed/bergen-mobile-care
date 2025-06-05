@@ -41,7 +41,7 @@ export const ContactInfo = () => {
                     </div>
                     <div>
                         <p className="font-semibold text-gray-800 dark:text-gray-100">Einsatzgebiet</p>
-                        <p className="text-gray-600 dark:text-gray-300">Aachen und 15 km Umkreis</p>
+                        <p className="text-gray-600 dark:text-gray-300">Aachen und 10 km Umkreis</p>
                     </div>
                 </div>
 
