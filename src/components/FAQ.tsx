@@ -9,35 +9,35 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "Wer kann mobile Fußpflege in Anspruch nehmen?",
-      answer: "Mobile Fußpflege ist für jeden geeignet, besonders aber für Senioren, Menschen mit eingeschränkter Mobilität, Berufstätige mit wenig Zeit und alle, die eine entspannte Behandlung in gewohnter Umgebung bevorzugen. Auch für Diabetiker biete ich spezielle Behandlungen an."
+      answer: "Mobile Fußpflege ist für jeden geeignet, besonders aber für Senioren, Menschen mit eingeschränkter Mobilität, Berufstätige mit wenig Zeit und alle, die eine entspannte Behandlung in gewohnter Umgebung bevorzugen. Diabetiker bitte ich Podologen zu kontaktieren."
     },
     {
       question: "Was muss ich für den Hausbesuch vorbereiten?",
-      answer: "Sie müssen nichts Besonderes vorbereiten. Ich bringe alle notwendigen Instrumente, Desinfektionsmittel und Pflegeprodukte mit. Wir benötigen lediglich einen ruhigen Platz mit gutem Licht und Zugang zu Wasser. Ein bequemer Stuhl reicht völlig aus."
+      answer: "Sie müssen nichts Besonderes vorbereiten. Ich bringe alle notwendigen Instrumente, Desinfektionsmittel und Pflegeprodukte mit. Wir benötigen lediglich etwas Platz und ein frisches Frotteehandtuch."
     },
     {
       question: "Wie läuft ein Hausbesuch ab?",
-      answer: "Nach der Terminvereinbarung komme ich pünktlich zu Ihnen nach Hause. Wir führen zunächst ein kurzes Beratungsgespräch, dann bereite ich alles vor und beginne mit der Behandlung. Je nach gebuchter Leistung dauert ein Termin zwischen 30-75 Minuten."
+      answer: "Nach der Terminvereinbarung komme ich pünktlich zu Ihnen nach Hause. Wir führen zunächst ein kurzes Beratungsgespräch, dann bereite ich alles vor und beginne mit der Behandlung."
     },
     {
       question: "Wie sind die Hygienestandards?",
-      answer: "Ich arbeite ausschließlich mit sterilen, desinfizierten Instrumenten. Alle Werkzeuge werden nach jedem Kunden professionell aufbereitet. Ich trage Handschuhe und achte auf höchste Hygienemaßnahmen nach medizinischen Standards."
+      answer: "Jede Behandlung erfolgt grundsätzlich unter Einhaltung strenger Hygiene-Richtlinien – für die Gesundheit und Sicherheit aller."
     },
     {
       question: "Welche Kosten entstehen und ist die Anfahrt kostenlos?",
-      answer: "Die Anfahrt ist im Umkreis von 15 km um Aachen kostenlos. Die Behandlungskosten richten sich nach der gewünschten Leistung und beginnen bei 35€ für eine entspannende Fußmassage bis 65€ für das Wellness-Paket."
+      answer: "Die Anfahrt ist im Umkreis von 15 km um Aachen kostenlos. Die Behandlungskosten richten sich nach der gewünschten Leistung und Aufwand."
     },
     {
       question: "Wie flexibel sind die Termine?",
-      answer: "Ich biete sehr flexible Termine an, auch abends und am Wochenende. Regelmäßige Termine können gerne vereinbart werden. Bei Bedarf sind auch kurzfristige Termine möglich."
+      answer: "Ich biete sehr flexible Termine an. Folgetermine vereinbaren wir auf Wunsch sofort nach der Behandlung. Terminänderungen sind selbstverständlich möglich."
     },
     {
-      question: "Behandeln Sie auch Diabetiker?",
-      answer: "Ja, ich habe eine spezielle Ausbildung für die Diabetiker-Fußpflege. Diese erfordert besondere Vorsicht und Expertise, da Diabetiker ein erhöhtes Risiko für Wundheilungsstörungen haben. Ich arbeite hier besonders sanft und achtsam."
+      question: "Wie persönlich und individuell werde ich betreut?",
+      answer: "Während der Behandlung nehme ich keine Anrufe an, um mich voll auf Sie als meinen Kunden zu konzentrieren. Bitte hinterlassen Sie eine Nachricht, ich rufe schnellstmöglich zurück. Danke für Ihr Verständnis."
     },
     {
       question: "Kann ich einen Gutschein verschenken?",
-      answer: "Ja, gerne können Sie Gutscheine für meine Leistungen verschenken. Das ist ein wunderbares Geschenk für Ihre Liebsten. Sprechen Sie mich einfach darauf an, und wir finden eine schöne Lösung."
+      answer: "Ja, sehr gerne können Sie Gutscheine für meine Leistungen erwerben. Dies ist ein wunderbares Geschenk für Ihre Liebsten. Sprechen Sie mich einfach darauf an."
     }
   ];
 

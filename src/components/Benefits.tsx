@@ -53,7 +53,7 @@ export const Benefits = () => {
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
                 Entdecken Sie die Vorteile der professionellen Fußpflege direkt bei Ihnen
               </p>
-              <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mt-4">
                 Zuhause · Seniorenheim · Krankenhaus · Kurzzeitpflege · Hospiz
               </p>
             </div>
@@ -110,7 +110,7 @@ export const Benefits = () => {
                   </div>
                   <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Alle Menschen</h4>
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                    Die Wert auf Wohlbefinden und Lebensqualität legen und sich mit professioneller Fußpflege bewusst etwas Gutes tun möchten
+                    Die Wert auf Wohlbefinden und Lebensqualität legen und sich mit professioneller Fußpflege bewusst etwas Gutes gönnen
                   </p>
                 </div>
 

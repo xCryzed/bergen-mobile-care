@@ -132,16 +132,16 @@ export const Services = () => {
                   <div className="w-12 h-12 bg-warm-beige-100 dark:bg-warm-beige-800 rounded-full flex items-center justify-center mx-auto">
                     <Sparkles className="w-6 h-6 text-warm-beige-600 dark:text-warm-beige-400" />
                   </div>
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-100">Sterile Instrumente</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Höchste Hygienemaßnahmen</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-100">Hygiene & Sterilität</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Sterile Instrumente – sichere Behandlung</p>
                 </div>
 
                 <div className="space-y-2">
                   <div className="w-12 h-12 bg-soft-blue-100 dark:bg-soft-blue-800 rounded-full flex items-center justify-center mx-auto">
                     <Stethoscope className="w-6 h-6 text-soft-blue-600 dark:text-soft-blue-400" />
                   </div>
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-100">Beratung inklusive</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Tipps für die Fußgesundheit</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-100">Beratung</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Praktische Tipps für gesunde und gepflegte Füße</p>
                 </div>
               </div>
             </div>
