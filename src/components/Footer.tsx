@@ -95,7 +95,7 @@ export const Footer = () => {
                   Berufstätige schätzen den Komfort der mobilen Fußpflege. Vereinbaren
                   Sie noch heute Ihren Termin für professionelle Fußpflege in Aachen,
                   Burtscheid, Brand, Eilendorf, Laurensberg, Richterich,
-                  Vaalserquartier, sowie auch in Krankenhäusern und Seniorenheimen.
+                  Vaalserquartier, sowie in Seniorenheimen, Krankenhäusern und medizinischen Einrichtungen.
                 </p>
               </div>
             </div>
