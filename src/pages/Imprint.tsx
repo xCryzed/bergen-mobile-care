@@ -106,7 +106,7 @@ const Imprint = () => {
                                         </h2>
                                     </div>
                                     <p className="text-clamp-base text-gray-700 dark:text-gray-300">
-                                        Mobile Fußpflegerin
+                                        Fachfußpflegerin
                                     </p>
                                 </div>
                             </div>
