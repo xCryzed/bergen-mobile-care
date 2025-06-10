@@ -33,7 +33,7 @@ export const FAQ = () => {
     },
     {
       question: "Wie ist meine telefonische Erreichbarkeit?",
-      answer: "Während einer Behandlung kann ich Ihren Anruf leider nicht persönlich entgegennehmen. Bitte hinterlassen Sie eine Nachricht, ich melde mich schnellstmöglich zurück."
+      answer: "Sollten Sie mich während einer Behandlung nicht erreichen, hinterlassen Sie bitte eine Nachricht. Ich rufe Sie so bald wie möglich zurück."
     },
     {
       question: "Kann ich einen Gutschein verschenken?",
