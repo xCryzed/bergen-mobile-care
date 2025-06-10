@@ -1,6 +1,7 @@
 import { ContactInfo } from "./ContactInfo";
 import { QuickActions } from "./QuickActions";
 import { ContactForm } from "./ContactForm";
+import { QRCodeCard } from "./QRCodeCard";
 
 export const Contact = () => {
   return (
@@ -22,6 +23,7 @@ export const Contact = () => {
               <div className="space-y-8 animate-fade-in">
                 <ContactInfo />
                 <QuickActions />
+                <QRCodeCard />
               </div>
 
               {/* Contact Form */}
