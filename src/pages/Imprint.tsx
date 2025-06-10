@@ -92,7 +92,7 @@ const Imprint = () => {
                                         </div>
                                         <div className="flex items-center space-x-3">
                                             <Mail className="w-4 h-4 text-soft-blue-600" />
-                                            <span>E-Mail: kontakt@fusspflegebergen.de</span>
+                                            <span>E-Mail: infot@fusspflegebergen.de</span>
                                         </div>
                                     </div>
                                 </div>

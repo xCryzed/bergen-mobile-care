@@ -52,7 +52,7 @@ const Privacy = () => {
                                         <p>Deutschland</p>
                                         <br />
                                         <p>Telefon: +49 170 1212677</p>
-                                        <p>E-Mail: kontakt@fusspflegebergen.de</p>
+                                        <p>E-Mail: info@fusspflegebergen.de</p>
                                     </div>
                                 </div>
 

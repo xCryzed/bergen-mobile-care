@@ -55,8 +55,8 @@ export const Footer = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-soft-blue-400" />
-                    <a href="mailto:kontakt@fusspflegebergen.de" className="hover:text-soft-blue-300 transition-colors text-sm">
-                      kontakt@fusspflegebergen.de
+                    <a href="mailto:info@fusspflegebergen.de" className="hover:text-soft-blue-300 transition-colors text-sm">
+                      info@fusspflegebergen.de
                     </a>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -104,7 +104,7 @@ export const Footer = () => {
             <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
               <div className="flex flex-col items-center md:items-start mb-4 md:mb-0">
                 <p className="text-sm text-gray-400 mb-2">
-                  © {new Date().getFullYear()} Regina Bergen - Mobile Fußpflege. Alle Rechte vorbehalten.
+                  © {new Date().getFullYear()} Regina Bergen • Mobile Fußpflege. Alle Rechte vorbehalten.
                 </p>
                 <div className="flex items-center text-xs text-gray-500">
                   <span>Developed with</span>

@@ -54,7 +54,7 @@ export const Benefits = () => {
                 Entdecken Sie die Vorteile der professionellen Fußpflege direkt bei Ihnen
               </p>
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mt-4">
-                Zuhause · Seniorenheim · Krankenhaus · Kurzzeitpflege · Hospiz
+                Zuhause · Seniorenheim · Krankenhaus · Tagespflege · Hospiz
               </p>
             </div>
 
@@ -130,7 +130,7 @@ export const Benefits = () => {
                   </div>
                   <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Hilfsbedürftige Menschen</h4>
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                    Die auf Unterstützung angewiesen sind und die Vorteile einer einfühlsamen Behandlung in ihrer vertrauten Umgebung besonders schätzen
+                    Die auf Unterstützung angewiesen sind und eine fachgerechte Behandlung nur in ihrer vertrauten Umgebung möglich ist
                   </p>
                 </div>
               </div>

@@ -37,7 +37,7 @@ export const About = () => {
                 <div className="animate-fade-in">
                   <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                     <p className="text-clamp-base">
-                      Willkommen – Ihre Fußpflege in besten Händen
+                      Willkommen, Ihre Fußpflege in besten Händen.
                     </p>
                     <p className="text-clamp-base">
                       Ich bin Regina Bergen, seit mehr als 11 Jahren mobile Fachfußpflegerin mit
@@ -98,7 +98,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Flexible Termine</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Termine gestalte ich flexibel und individuell nach persönlicher Vereinbarung
+                          Individuelle Terminabsprachen ganz nach Ihren persönlichen Bedürfnissen
                         </p>
                       </div>
                     </div>

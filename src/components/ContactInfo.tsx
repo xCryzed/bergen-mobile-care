@@ -29,8 +29,8 @@ export const ContactInfo = () => {
                     </div>
                     <div>
                         <p className="font-semibold text-gray-800 dark:text-gray-100">E-Mail</p>
-                        <a href="mailto:kontakt@fusspflegebergen.de" className="text-sage-600 dark:text-sage-400 hover:text-sage-700 dark:hover:text-sage-300 font-medium">
-                            kontakt@fusspflegebergen.de
+                        <a href="mailto:infot@fusspflegebergen.de" className="text-sage-600 dark:text-sage-400 hover:text-sage-700 dark:hover:text-sage-300 font-medium">
+                            info@fusspflegebergen.de
                         </a>
                     </div>
                 </div>

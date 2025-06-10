@@ -54,8 +54,7 @@ export const Services = () => {
                 Meine Leistungen
               </h2>
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Fachgerechte Fußpflege mit modernsten Methoden – bei Ihnen zu Hause - oder dort, wo Sie
-                sich gerade aktuell in Aachen aufhalten
+                Fachgerechte Fußpflege mit modernsten Methoden bei Ihnen zu Hause oder dort, wo Sie sich gerade aktuell in Aachen aufhalten
               </p>
             </div>
 

@@ -20,8 +20,8 @@ export const FAQ = () => {
       answer: "Nach der Terminvereinbarung komme ich pünktlich zu Ihnen nach Hause. Wir führen zunächst ein kurzes Beratungsgespräch, dann bereite ich alles vor und beginne mit der Behandlung."
     },
     {
-      question: "Wie sind die Hygienestandards?",
-      answer: "Jede Behandlung erfolgt grundsätzlich unter Einhaltung strenger Hygiene-Richtlinien – für die Gesundheit und Sicherheit aller."
+      question: "Was sind die Hygienestandards?",
+      answer: "Jede Behandlung erfolgt nach strengen, gesetzlich festgelegten Hygienestandards von RKI, WHO und Gesundheitsbehörden zum Schutz der Gesundheit aller."
     },
     {
       question: "Welche Kosten entstehen und ist die Anfahrt kostenlos?",
@@ -32,8 +32,8 @@ export const FAQ = () => {
       answer: "Ich biete sehr flexible Termine an. Folgetermine vereinbaren wir auf Wunsch sofort nach der Behandlung. Terminänderungen sind selbstverständlich möglich."
     },
     {
-      question: "Wie persönlich und individuell werde ich betreut?",
-      answer: "Während der Behandlung nehme ich keine Anrufe an, um mich voll auf Sie als meinen Kunden zu konzentrieren. Bitte hinterlassen Sie eine Nachricht, ich rufe schnellstmöglich zurück. Danke für Ihr Verständnis."
+      question: "Wie ist meine telefonische Erreichbarkeit?",
+      answer: "Während einer Behandlung kann ich Ihren Anruf leider nicht persönlich entgegennehmen. Bitte hinterlassen Sie eine Nachricht, ich melde mich schnellstmöglich zurück."
     },
     {
       question: "Kann ich einen Gutschein verschenken?",
@@ -85,7 +85,7 @@ export const FAQ = () => {
                 Weitere Fragen?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                Ich beantworte gerne alle Ihre Fragen persönlich. Rufen Sie mich an oder schreiben Sie mir eine Nachricht.
+                Ich beantworte gerne alle Ihre Fragen persönlich
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

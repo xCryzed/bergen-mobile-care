@@ -14,7 +14,7 @@ export const Contact = () => {
                 Kontakt & Termin vereinbaren
               </h2>
               <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Ich freue mich auf Ihre Nachricht. Gerne beantworte ich alle Fragen und vereinbare einen Termin mit Ihnen
+                Ich freue mich auf Ihre Nachricht
               </p>
             </div>
 
