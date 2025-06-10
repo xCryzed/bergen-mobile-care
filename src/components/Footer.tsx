@@ -73,11 +73,11 @@ export const Footer = () => {
               <div>
                 <h4 className="text-lg font-semibold mb-4">Leistungen</h4>
                 <ul className="space-y-2 text-sm">
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Basispflege</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Erweiterte Fußpflege</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Nagelprothetik</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Maniküre</li>
-                  <li className="text-gray-300 hover:text-white transition-colors cursor-pointer">Lackieren</li>
+                  <li className="text-gray-300">Basispflege</li>
+                  <li className="text-gray-300">Erweiterte Fußpflege</li>
+                  <li className="text-gray-300">Nagelprothetik</li>
+                  <li className="text-gray-300">Maniküre</li>
+                  <li className="text-gray-300">Lackieren</li>
                 </ul>
               </div>
             </div>
