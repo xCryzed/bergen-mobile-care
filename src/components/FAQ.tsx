@@ -100,7 +100,7 @@ export const FAQ = () => {
                   <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-soft-blue-500 dark:text-soft-blue-400 w-5 h-5 transition-colors group-focus-within:text-soft-blue-600 dark:group-focus-within:text-soft-blue-300" />
                   <Input
                       type="text"
-                      placeholder="FAQs durchsuchen..."
+                      placeholder="Häufig gestellte Fragen durchsuchen..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
                       className="pl-12 pr-6 py-4 w-full text-base bg-gradient-to-r from-white to-soft-blue-50 dark:from-gray-800 dark:to-gray-700 border-2 border-soft-blue-200 dark:border-gray-600 focus:border-soft-blue-500 dark:focus:border-soft-blue-400 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 focus:scale-[1.02] focus:shadow-soft-blue-200/50 dark:focus:shadow-soft-blue-800/50"
