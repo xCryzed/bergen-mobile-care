@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { displayCustomerCount } from "@/lib/utils.ts";
 
 export const GoogleReviews = () => {
+    const [isWidgetVisible, setIsWidgetVisible] = useState(true);
+
     useEffect(() => {
         if (!document.querySelector('script[src="https://static.elfsight.com/platform/platform.js"]')) {
             const script = document.createElement('script');
@@ -9,7 +11,50 @@ export const GoogleReviews = () => {
             script.async = true;
             document.head.appendChild(script);
         }
+
+        const handleError = (event: ErrorEvent) => {
+            if (event.message && event.message.includes('APP_VIEWS_LIMIT_REACHED')) {
+                setIsWidgetVisible(false);
+            }
+        };
+
+        const originalConsoleError = console.error;
+        console.error = (...args) => {
+            const message = args.join(' ');
+            if (message.includes('APP_VIEWS_LIMIT_REACHED') || message.includes('32654581-d9fe-4f6e-bdbb-bfcf579df1b3')) {
+                setIsWidgetVisible(false);
+            }
+            originalConsoleError.apply(console, args);
+        };
+
+        window.addEventListener('error', handleError);
+
+        const checkWidget = () => {
+            const widgetContainer = document.querySelector('.elfsight-app-32654581-d9fe-4f6e-bdbb-bfcf579df1b3');
+            if (widgetContainer) {
+                const iframe = widgetContainer.querySelector('iframe');
+                if (!iframe || iframe.style.display === 'none') {
+                    setTimeout(() => {
+                        const updatedIframe = widgetContainer.querySelector('iframe');
+                        if (!updatedIframe || updatedIframe.style.display === 'none') {
+                            setIsWidgetVisible(false);
+                        }
+                    }, 5000);
+                }
+            }
+        };
+
+        setTimeout(checkWidget, 3000);
+
+        return () => {
+            window.removeEventListener('error', handleError);
+            console.error = originalConsoleError;
+        };
     }, []);
+
+    if (!isWidgetVisible) {
+        return null;
+    }
 
     return (
         <section className="py-20 bg-gradient-to-br from-sage-50 to-soft-blue-50 dark:from-gray-800 dark:to-gray-900">
