@@ -63,7 +63,7 @@ export const Footer = () => {
                     <MapPin className="w-5 h-5 text-soft-blue-400 mt-1" />
                     <div>
                       <p>Einsatzgebiet:</p>
-                      <p className="text-sm text-gray-400">Aachen und 10 km Umkreis</p>
+                      <p className="text-sm text-gray-400">Aachen und Umgebung</p>
                     </div>
                   </div>
                 </div>
