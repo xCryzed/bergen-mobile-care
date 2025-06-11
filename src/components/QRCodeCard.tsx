@@ -1,7 +1,17 @@
 import { Card } from "@/components/ui/card";
-import { QrCode, Smartphone, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { QrCode, Smartphone, Download, Contact } from "lucide-react";
 
 export const QRCodeCard = () => {
+    const handleDownloadVCard = () => {
+        const link = document.createElement('a');
+        link.href = '/contact-v-card.vcf';
+        link.download = 'Regina Bergen - Kontakt.vcf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <Card className="p-8 shadow-lg border-l-4 border-l-sage-500 dark:bg-gray-800 dark:border-gray-700">
             <div className="text-center">
@@ -15,35 +25,46 @@ export const QRCodeCard = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                    Scannen Sie den QR-Code mit Ihrem Smartphone, um alle Kontaktdaten direkt in Ihr Adressbuch zu übernehmen
+                    Wählen Sie Ihre bevorzugte Methode, um alle Kontaktdaten in Ihr Adressbuch zu übernehmen
                 </p>
 
                 {/* QR Code Container */}
-                <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-inner mb-6 mx-auto max-w-xs">
+                <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-inner mb-4 mx-auto max-w-xs">
                     <img src="/contact-qr-code.svg" />
                 </div>
 
-                {/* Instructions */}
-                <div className="space-y-4">
-                    <div className="flex items-center justify-center space-x-3 text-sage-600 dark:text-sage-400">
+                {/* QR Code Instructions */}
+                <div className="mb-6">
+                    <div className="flex items-center justify-center space-x-3 text-sage-600 dark:text-sage-400 mb-4">
                         <Smartphone className="w-5 h-5" />
                         <span className="text-sm font-medium">
-                            Kamera-App öffnen und QR-Code scannen
-                        </span>
-                    </div>
-
-                    <div className="flex items-center justify-center space-x-3 text-soft-blue-600 dark:text-soft-blue-400">
-                        <Download className="w-5 h-5" />
-                        <span className="text-sm font-medium">
-                            Kontakt automatisch speichern
+                            QR-Code mit Kamera scannen
                         </span>
                     </div>
                 </div>
 
+                {/* Divider */}
+                <div className="flex items-center mb-6">
+                    <div className="flex-1 border-t border-gray-200 dark:border-gray-600"></div>
+                    <span className="px-4 text-sm text-gray-500 dark:text-gray-400 font-medium">oder</span>
+                    <div className="flex-1 border-t border-gray-200 dark:border-gray-600"></div>
+                </div>
+
+                {/* Download Button */}
+                <div className="mb-6">
+                    <Button
+                        onClick={handleDownloadVCard}
+                        className="bg-sage-600 hover:bg-sage-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md"
+                    >
+                        <Contact className="w-5 h-5 mr-2" />
+                        Kontakt speichern
+                    </Button>
+                </div>
+
                 {/* Alternative action */}
-                <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
+                <div className="mt-4 pt-4">
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                        Funktioniert mit allen modernen Smartphones
+                        Funktioniert mit allen modernen Smartphones und Computern
                     </p>
                 </div>
             </div>
