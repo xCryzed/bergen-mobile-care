@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Imprint from "@/pages/Imprint.tsx";
 import Privacy from "@/pages/Privacy.tsx";
 import { CookieBanner } from "@/components/CookieBanner.tsx";
+import { SEOProvider } from "@/components/SEOProvier.tsx";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
                 <Toaster />
                 <Sonner />
                 <BrowserRouter>
+                    <SEOProvider>
                     <Routes>
                         <Route path={'/'} element={<Index />} />
                         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
@@ -26,6 +28,7 @@ const App = () => (
                         <Route path="/datenschutz" element={<Privacy />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
+                    </SEOProvider>
                 </BrowserRouter>
                 <CookieBanner />
             </TooltipProvider>

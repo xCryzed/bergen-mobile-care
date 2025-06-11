@@ -1,8 +1,10 @@
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -12,3 +14,19 @@ Allow: /
 
 User-agent: *
 Allow: /
+Crawl-delay: 2
+
+# Sitemap Location
+Sitemap: https://fusspflegebergen.de/sitemap.xml
+
+# Disallow admin/private areas if any exist in future
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Allow access to important files
+Allow: /logo.svg
+Allow: /profile-picture.webp
+Allow: /favicon.ico
+Allow: /*.css
+Allow: /*.js
