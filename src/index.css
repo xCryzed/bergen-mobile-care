@@ -1,33 +1,33 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/OpenSans-Light.woff2') format('woff2');
+  src: url("/fonts/OpenSans-Light.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
+  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2');
+  src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/OpenSans-Bold.woff2') format('woff2');
+  src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
 }
 
 @tailwind base;
@@ -114,11 +114,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
   }
 
   /* Custom Scrollbar Styles - Enhanced for Mobile */
@@ -196,12 +201,14 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    body, html {
+    body,
+    html {
       scrollbar-width: thin;
       scrollbar-color: hsl(208 100% 47%) hsl(210 40% 96.1%);
     }
 
-    .dark body, .dark html {
+    .dark body,
+    .dark html {
       scrollbar-color: hsl(208 100% 55%) hsl(217.2 32.6% 17.5%);
     }
   }

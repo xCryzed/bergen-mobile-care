@@ -1,8 +1,8 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 export const displayCustomerCount = () => {
@@ -13,6 +13,8 @@ export const displayCustomerCount = () => {
   const start = new Date(startDate);
   const today = new Date();
 
-  const diffInDays = Math.floor((today.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+  const diffInDays = Math.floor(
+    (today.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+  );
   return Math.floor(startCount + diffInDays * incrementPerDay);
-}
+};

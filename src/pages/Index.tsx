@@ -11,23 +11,23 @@ import { GoogleReviews } from "@/components/GoogleReviews.tsx";
 import { Philosophy } from "@/components/Philosophy.tsx";
 
 const Index = () => {
-    return (
-        <div className="min-h-screen bg-gradient-to-b from-white to-soft-blue-50 dark:from-gray-900 dark:to-gray-800">
-            <Header />
-            <main>
-                <Hero />
-                <About />
-                <Philosophy />
-                <Services />
-                <Benefits />
-                <GoogleReviews />
-                <FAQ />
-                <Contact />
-            </main>
-            <Footer />
-            <StickyCallButton />
-        </div>
-    );
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white to-soft-blue-50 dark:from-gray-900 dark:to-gray-800">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Philosophy />
+        <Services />
+        <Benefits />
+        <GoogleReviews />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
+      <StickyCallButton />
+    </div>
+  );
 };
 
 export default Index;

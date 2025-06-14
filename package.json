@@ -9,7 +9,9 @@
     "build:dev": "vite build --mode development",
     "postbuild": "cp dist/index.html dist/404.html",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

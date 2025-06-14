@@ -14,26 +14,26 @@ import { SEOProvider } from "@/components/SEOProvier.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
-    <QueryClientProvider client={queryClient}>
-        <ThemeProvider defaultTheme="system" storageKey="bergen-mobile-care-theme">
-            <TooltipProvider>
-                <Toaster />
-                <Sonner />
-                <BrowserRouter>
-                    <SEOProvider>
-                    <Routes>
-                        <Route path={'/'} element={<Index />} />
-                        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                        <Route path="/impressum" element={<Imprint />} />
-                        <Route path="/datenschutz" element={<Privacy />} />
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                    </SEOProvider>
-                </BrowserRouter>
-                <CookieBanner />
-            </TooltipProvider>
-        </ThemeProvider>
-    </QueryClientProvider>
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider defaultTheme="system" storageKey="bergen-mobile-care-theme">
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <SEOProvider>
+            <Routes>
+              <Route path={"/"} element={<Index />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="/impressum" element={<Imprint />} />
+              <Route path="/datenschutz" element={<Privacy />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </SEOProvider>
+        </BrowserRouter>
+        <CookieBanner />
+      </TooltipProvider>
+    </ThemeProvider>
+  </QueryClientProvider>
 );
 
 export default App;
