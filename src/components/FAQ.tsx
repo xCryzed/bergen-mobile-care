@@ -31,7 +31,7 @@ export const FAQ = () => {
     },
     {
       question: "Welche Kosten entstehen und ist die Anfahrt kostenlos?",
-      answer: "Die Anfahrt ist in Aachen und Umgebung kostenlos. Die Behandlungskosten richten sich nach der gewünschten Leistung und Aufwand."
+      answer: "Die Anfahrt ist in Aachen kostenlos. Die Behandlungskosten richten sich nach der gewünschten Leistung und Aufwand."
     },
     {
       question: "Wie flexibel sind die Termine?",

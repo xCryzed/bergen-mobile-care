@@ -98,7 +98,7 @@ export const About = () => {
                       <div>
                         <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-2">Flexible Termine</h4>
                         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          Individuelle Terminabsprachen ganz nach Ihren persönlichen Bedürfnissen
+                          Die Terminvereinbarung erfolgt flexibel innerhalb Ihrer verfügbaren Zeitfenster
                         </p>
                       </div>
                     </div>

@@ -211,7 +211,7 @@ export const ContactForm = () => {
                                     <Textarea
                                         className="mt-2 text-clamp-base dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
                                         rows={4}
-                                        placeholder="Haben Sie besondere Wünsche oder Fragen? Teilen Sie mir diese gerne mit"
+                                        placeholder="Was möchten Sie mir mitteilen?"
                                         {...field}
                                     />
                                 </FormControl>

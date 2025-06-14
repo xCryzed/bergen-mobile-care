@@ -19,7 +19,7 @@ export const SEOProvider = ({ children }: SEOProviderProps) => {
                 "@type": "LocalBusiness",
                 "@id": "https://fusspflegebergen.de/#business",
                 "name": "Regina Bergen - Mobile Fußpflege",
-                "description": "Professionelle mobile Fußpflege in Aachen und Umgebung. Fachfußpflegerin Regina Bergen kommt zu Ihnen nach Hause. Termin vereinbaren: +49 170 1212677",
+                "description": "Professionelle mobile Fußpflege in Aachen. Fachfußpflegerin Regina Bergen kommt zu Ihnen nach Hause. Termin vereinbaren: +49 170 1212677",
                 "url": "https://fusspflegebergen.de",
                 "telephone": "+491701212677",
                 "email": "info@fusspflegebergen.de",
@@ -107,7 +107,7 @@ export const SEOProvider = ({ children }: SEOProviderProps) => {
                 "@id": "https://fusspflegebergen.de/#person",
                 "name": "Regina Bergen",
                 "jobTitle": "Fachfußpflegerin",
-                "description": "Erfahrene Fachfußpflegerin mit Spezialisierung auf mobile Fußpflege in Aachen und Umgebung",
+                "description": "Erfahrene Fachfußpflegerin mit Spezialisierung auf mobile Fußpflege in Aachen",
                 "image": "https://fusspflegebergen.de/profile-picture.webp",
                 "telephone": "+491701212677",
                 "email": "info@fusspflegebergen.de",
@@ -128,7 +128,7 @@ export const SEOProvider = ({ children }: SEOProviderProps) => {
                 "@type": "Service",
                 "@id": "https://fusspflegebergen.de/#service",
                 "name": "Mobile Fußpflege",
-                "description": "Professionelle mobile Fußpflege direkt bei Ihnen zu Hause in Aachen und Umgebung. Alle Behandlungen werden nach höchsten Hygienestandards durchgeführt.",
+                "description": "Professionelle mobile Fußpflege direkt bei Ihnen zu Hause in Aachen. Alle Behandlungen werden nach höchsten Hygienestandards durchgeführt.",
                 "provider": {
                     "@id": "https://fusspflegebergen.de/#business"
                 },
@@ -179,7 +179,7 @@ export const SEOProvider = ({ children }: SEOProviderProps) => {
                         "name": "Welche Kosten entstehen und ist die Anfahrt kostenlos?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Die Anfahrt ist in Aachen und Umgebung kostenlos. Die Behandlungskosten richten sich nach der gewünschten Leistung und Aufwand."
+                            "text": "Die Anfahrt ist in Aachen kostenlos. Die Behandlungskosten richten sich nach der gewünschten Leistung und Aufwand."
                         }
                     }
                 ]

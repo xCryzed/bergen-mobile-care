@@ -6,7 +6,7 @@ export const ContactInfo = () => {
         <Card className="p-8 shadow-lg border-l-4 border-l-soft-blue-500 dark:bg-gray-800 dark:border-gray-700">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Regina Bergen</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                Ihre Expertin für mobile Fußpflege in Aachen und Umgebung.
+                Ihre Expertin für mobile Fußpflege in Aachen.
                 Ich bringe professionelle Fußpflege direkt zu Ihnen nach Hause.
             </p>
 
@@ -41,7 +41,7 @@ export const ContactInfo = () => {
                     </div>
                     <div>
                         <p className="font-semibold text-gray-800 dark:text-gray-100">Einsatzgebiet</p>
-                        <p className="text-gray-600 dark:text-gray-300">Aachen und Umgebung</p>
+                        <p className="text-gray-600 dark:text-gray-300">Aachen</p>
                     </div>
                 </div>
 

@@ -33,7 +33,7 @@ export const Footer = () => {
                 </div>
 
                 <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-                  Professionelle mobile Fußpflege in Aachen und Umgebung. Einfühlsame Betreuung
+                  Professionelle mobile Fußpflege in Aachen. Einfühlsame Betreuung
                   direkt bei Ihnen zu Hause für gepflegte Füße und mehr Lebensqualität.
                 </p>
 
@@ -63,7 +63,7 @@ export const Footer = () => {
                     <MapPin className="w-5 h-5 text-soft-blue-400 mt-1" />
                     <div>
                       <p>Einsatzgebiet:</p>
-                      <p className="text-sm text-gray-400">Aachen und Umgebung</p>
+                      <p className="text-sm text-gray-400">Aachen</p>
                     </div>
                   </div>
                 </div>

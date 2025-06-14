@@ -38,12 +38,12 @@ export const Hero = () => {
             {/* Location indicator - hidden on mobile */}
             <div className="hidden md:flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
               <MapPin className="w-5 h-5 mr-2" />
-              <span className="font-medium">Aachen und Umgebung • Termine nur nach Vereinbarung</span>
+              <span className="font-medium">Aachen • Termine nur nach Vereinbarung</span>
             </div>
 
             {/* Mobile location text without icon */}
             <div className="md:hidden flex items-center justify-center mb-10 text-soft-blue-700 dark:text-soft-blue-300 animate-fade-in">
-              <span className="font-medium text-center">Aachen und Umgebung<br />Termine nur nach Vereinbarung</span>
+              <span className="font-medium text-center">Aachen<br />Termine nur nach Vereinbarung</span>
             </div>
 
             {/* CTA Buttons */}

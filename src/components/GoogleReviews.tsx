@@ -66,7 +66,7 @@ export const GoogleReviews = () => {
                             Was meine Kunden sagen
                         </h2>
                         <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                            Echte Google-Bewertungen von zufriedenen Kunden aus Aachen und Umgebung
+                            Echte Google-Bewertungen von zufriedenen Kunden aus Aachen
                         </p>
                     </div>
 
