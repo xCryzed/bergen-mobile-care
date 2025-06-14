@@ -543,13 +543,8 @@ export const SEOProvider = ({ children }: SEOProviderProps) => {
         `https://fusspflegebergen.de${path}`
       );
 
-      // Preconnect für Performance
       const preconnectDomains = [
-        "https://static.elfsight.com",
-        "https://fonts.googleapis.com",
-        "https://fonts.gstatic.com",
-        "https://www.google.com",
-        "https://www.googletagmanager.com",
+        "https://static.elfsight.com"
       ];
 
       preconnectDomains.forEach((domain) => {
