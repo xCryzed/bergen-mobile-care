@@ -1,7 +1,7 @@
 import {Header} from "@/components/Header.tsx";
 import {Footer} from "@/components/Footer.tsx";
 import {useEffect} from "react";
-import { FileText, User, MapPin, Phone, Mail, Briefcase } from "lucide-react";
+import { FileText, User, MapPin, Phone, Mail, Briefcase, Building2, Scale, Shield, ExternalLink } from "lucide-react";
 
 const Imprint = () => {
     useEffect(() => {
@@ -31,7 +31,7 @@ const Imprint = () => {
                                     </h1>
                                 </div>
                                 <p className="text-clamp-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                                    Angaben gemäß § 5 DDG (ehemals TMG):
+                                    Angaben gemäß § 5 TMG
                                 </p>
                             </div>
 
@@ -44,26 +44,14 @@ const Imprint = () => {
                                             Unternehmer
                                         </h2>
                                     </div>
-                                    <p className="text-clamp-base text-gray-700 dark:text-gray-300">
-                                        Regina Bergen
-                                    </p>
-                                </div>
-
-                                {/* Geschäftsbezeichnung */}
-                                <div>
-                                    <div className="flex items-center mb-4">
-                                        <Briefcase className="w-6 h-6 text-soft-blue-600 mr-3" />
-                                        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
-                                            Geschäftsbezeichnung
-                                        </h2>
+                                    <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-1">
+                                        <p>Regina Bergen</p>
+                                        <p>Mobile Fachfußpflege</p>
                                     </div>
-                                    <p className="text-clamp-base text-gray-700 dark:text-gray-300">
-                                        Mobile Fußpflege Regina Bergen
-                                    </p>
                                 </div>
 
                                 {/* Anschrift */}
-                                <div className="bg-soft-blue-50 dark:bg-gray-800 rounded-lg p-6">
+                                <div>
                                     <div className="flex items-center mb-4">
                                         <MapPin className="w-6 h-6 text-soft-blue-600 mr-3" />
                                         <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
@@ -73,12 +61,11 @@ const Imprint = () => {
                                     <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-1">
                                         <p>Zum Kirschbäumchen 24</p>
                                         <p>52070 Aachen</p>
-                                        <p>Deutschland</p>
                                     </div>
                                 </div>
 
                                 {/* Kontakt */}
-                                <div>
+                                <div className="bg-soft-blue-50 dark:bg-gray-800 rounded-lg p-6">
                                     <div className="flex items-center mb-4">
                                         <Phone className="w-6 h-6 text-soft-blue-600 mr-3" />
                                         <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
@@ -97,17 +84,106 @@ const Imprint = () => {
                                     </div>
                                 </div>
 
-                                {/* Berufsbezeichnung */}
+                                {/* Gewerbeanmeldung */}
+                                <div>
+                                    <div className="flex items-center mb-4">
+                                        <Building2 className="w-6 h-6 text-soft-blue-600 mr-3" />
+                                        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                                            Gewerbeanmeldung
+                                        </h2>
+                                    </div>
+                                    <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-1">
+                                        <p>Gewerbeanmeldung gemäß § 14 GewO erfolgt bei:</p>
+                                        <p className="font-semibold mt-2">Stadt Aachen – Gewerbemeldestelle</p>
+                                        <p>Lagerhausstraße 20</p>
+                                        <p>52064 Aachen</p>
+                                        <p>Deutschland</p>
+                                    </div>
+                                </div>
+
+                                {/* Tätigkeitsbeschreibung */}
                                 <div className="bg-soft-blue-50 dark:bg-gray-800 rounded-lg p-6">
                                     <div className="flex items-center mb-4">
                                         <Briefcase className="w-6 h-6 text-soft-blue-600 mr-3" />
                                         <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
-                                            Berufsbezeichnung
+                                            Tätigkeitsbeschreibung
                                         </h2>
                                     </div>
                                     <p className="text-clamp-base text-gray-700 dark:text-gray-300">
                                         Fachfußpflegerin
                                     </p>
+                                </div>
+
+                                {/* Zuständige Kammer */}
+                                <div>
+                                    <div className="flex items-center mb-4">
+                                        <Scale className="w-6 h-6 text-soft-blue-600 mr-3" />
+                                        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                                            Zuständige Kammer
+                                        </h2>
+                                    </div>
+                                    <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-1">
+                                        <p className="font-semibold">Handwerkskammer Aachen</p>
+                                        <p>Sandkaulbach 17–21</p>
+                                        <p>52062 Aachen</p>
+                                        <p>Deutschland</p>
+                                    </div>
+                                </div>
+
+                                {/* Verantwortlich für den Inhalt */}
+                                <div className="bg-soft-blue-50 dark:bg-gray-800 rounded-lg p-6">
+                                    <div className="flex items-center mb-4">
+                                        <User className="w-6 h-6 text-soft-blue-600 mr-3" />
+                                        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                                            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+                                        </h2>
+                                    </div>
+                                    <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-1">
+                                        <p>Regina Bergen</p>
+                                        <p>Zum Kirschbäumchen 24</p>
+                                        <p>52070 Aachen</p>
+                                    </div>
+                                </div>
+
+                                {/* Betriebs-/Berufshaftpflichtversicherung */}
+                                <div>
+                                    <div className="flex items-center mb-4">
+                                        <Shield className="w-6 h-6 text-soft-blue-600 mr-3" />
+                                        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                                            Betriebs-/Berufshaftpflichtversicherung
+                                        </h2>
+                                    </div>
+                                    <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-1">
+                                        <p>ALTE LEIPZIGER Vers.AG</p>
+                                        <p>61435 Oberursel (Taunus)</p>
+                                    </div>
+                                </div>
+
+                                {/* Online-Streitbeilegung */}
+                                <div className="bg-soft-blue-50 dark:bg-gray-800 rounded-lg p-6">
+                                    <div className="flex items-center mb-4">
+                                        <ExternalLink className="w-6 h-6 text-soft-blue-600 mr-3" />
+                                        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                                            Online-Streitbeilegung
+                                        </h2>
+                                    </div>
+                                    <div className="text-clamp-base text-gray-700 dark:text-gray-300 space-y-3">
+                                        <p>Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO:</p>
+                                        <p>
+                                            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
+                                            <a
+                                                href="https://ec.europa.eu/consumers/odr"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-soft-blue-600 dark:text-soft-blue-400 hover:text-soft-blue-700 dark:hover:text-soft-blue-300 underline"
+                                            >
+                                                https://ec.europa.eu/consumers/odr
+                                            </a>
+                                        </p>
+                                        <p>
+                                            Ich bin nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
