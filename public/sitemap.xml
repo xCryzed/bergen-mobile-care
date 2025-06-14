@@ -3,34 +3,59 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
+    <!-- Hauptseite -->
     <url>
         <loc>https://fusspflegebergen.de/</loc>
-        <lastmod>2025-01-11</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://fusspflegebergen.de/profile-picture.webp</image:loc>
             <image:title>Regina Bergen - Fachfußpflegerin für mobile Fußpflege in Aachen</image:title>
-            <image:caption>Professionelle mobile Fußpflege direkt bei Ihnen zu Hause in Aachen</image:caption>
+            <image:caption>Professionelle mobile Fußpflege direkt bei Ihnen zu Hause in Aachen. Über 11 Jahre Erfahrung, zertifizierte Fachfußpflegerin, kostenlose Anfahrt.</image:caption>
         </image:image>
         <image:image>
             <image:loc>https://fusspflegebergen.de/logo.svg</image:loc>
             <image:title>Mobile Fußpflege Regina Bergen Logo</image:title>
+            <image:caption>Logo der mobilen Fußpflege Regina Bergen in Aachen</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://fusspflegebergen.de/contact-qr-code.svg</image:loc>
+            <image:title>QR-Code Kontakt Regina Bergen</image:title>
+            <image:caption>QR-Code zum direkten Speichern der Kontaktdaten von Regina Bergen</image:caption>
         </image:image>
     </url>
 
+    <!-- Impressum -->
     <url>
         <loc>https://fusspflegebergen.de/impressum</loc>
-        <lastmod>2025-01-11</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
 
+    <!-- Datenschutz -->
     <url>
         <loc>https://fusspflegebergen.de/datenschutz</loc>
-        <lastmod>2025-01-11</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
+    </url>
+
+    <!-- Mobile App Manifest -->
+    <url>
+        <loc>https://fusspflegebergen.de/site.webmanifest</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <!-- Wichtige Ressourcen -->
+    <url>
+        <loc>https://fusspflegebergen.de/contact-v-card.vcf</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
     </url>
 
 </urlset>

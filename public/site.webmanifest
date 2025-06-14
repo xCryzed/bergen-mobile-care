@@ -1,21 +1,72 @@
 {
-  "name": "Mobile Fußpflege - Regina Bergen",
-  "short_name": "Fußpflege",
+  "name": "Mobile Fußpflege - Regina Bergen Aachen",
+  "short_name": "Fußpflege Bergen",
+  "description": "Professionelle mobile Fußpflege in Aachen. Regina Bergen kommt zu Ihnen nach Hause. Über 11 Jahre Erfahrung, zertifizierte Fachfußpflegerin.",
+  "categories": ["health", "lifestyle", "medical"],
+  "lang": "de-DE",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#3B82F6",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "shortcuts": [
+    {
+      "name": "Termin vereinbaren",
+      "short_name": "Termin",
+      "description": "Direkt einen Termin für mobile Fußpflege vereinbaren",
+      "url": "/?action=contact",
+      "icons": [
+        {
+          "src": "/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Anrufen",
+      "short_name": "Anrufen",
+      "description": "Regina Bergen direkt anrufen",
+      "url": "tel:+491701212677",
+      "icons": [
+        {
+          "src": "/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/profile-picture.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "platform": "wide",
+      "label": "Regina Bergen - Mobile Fußpflege Aachen"
+    }
+  ]
 }

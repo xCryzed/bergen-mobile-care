@@ -19,14 +19,32 @@ Crawl-delay: 2
 # Sitemap Location
 Sitemap: https://fusspflegebergen.de/sitemap.xml
 
+# Wichtige Seiten hervorheben
+Allow: /
+Allow: /impressum
+Allow: /datenschutz
+
 # Disallow admin/private areas if any exist in future
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.pdf$
+Disallow: /api/
+Disallow: /tmp/
 
 # Allow access to important files
 Allow: /logo.svg
 Allow: /profile-picture.webp
+Allow: /contact-qr-code.svg
 Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /apple-touch-icon.png
 Allow: /*.css
 Allow: /*.js
+Allow: /*.webp
+Allow: /*.png
+Allow: /*.svg
+
+# Mobile Fußpflege Aachen - Regina Bergen
+# Professionelle mobile Fußpflege in Aachen
+# Tel: +49 170 1212677
+# https://fusspflegebergen.de
