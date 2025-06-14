@@ -26,6 +26,17 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Format code with Prettier
+        run: npx prettier --write .
+
+      - name: Commit formatted code
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff --staged --quiet || git commit -m "Auto-format code with Prettier [skip ci]"
+          git push || true
+
       - name: Build with Vite
         run: npm run build
 
