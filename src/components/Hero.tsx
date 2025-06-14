@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-      <section className="relative bg-gradient-to-br from-soft-blue-50 via-white to-warm-beige-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-soft-blue-50 via-white to-warm-beige-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 h-screen flex items-center justify-center overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-soft-blue-100/20 to-transparent dark:from-soft-blue-900/20 dark:to-transparent"></div>
 
