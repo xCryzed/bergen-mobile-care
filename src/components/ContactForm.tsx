@@ -36,6 +36,7 @@ export const ContactForm = () => {
       name: "",
       phone: "",
       email: "",
+      location: "",
       preferredTime: "",
       callbackTime: "",
       message: "",
@@ -54,6 +55,7 @@ export const ContactForm = () => {
       from_name: data.name.trim(),
       from_phone: data.phone.trim(),
       from_email: data.email?.trim() || "Keine E-Mail angegeben",
+      location: data.location?.trim() || "Nicht angegeben",
       preferred_service: data.preferredTime || "Nicht angegeben",
       callback_time: data.callbackTime || "Nicht angegeben",
       message: data.message?.trim() || "Keine zusätzliche Nachricht",
@@ -137,26 +139,48 @@ export const ContactForm = () => {
             />
           </div>
 
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  E-Mail (optional)
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    type="email"
-                    placeholder="Ihre E-Mail Adresse"
-                    className="mt-2 text-clamp-base dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          <div className="grid md:grid-cols-2 gap-4">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    E-Mail (optional)
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      type="email"
+                      placeholder="Ihre E-Mail Adresse"
+                      className="mt-2 text-clamp-base dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="location"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Einsatzort (optional)
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Adresse oder Stadtteil"
+                      className="mt-2 text-clamp-base dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
 
           <div className="grid md:grid-cols-2 gap-4">
             <FormField

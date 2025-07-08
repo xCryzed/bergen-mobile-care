@@ -10,7 +10,7 @@ export const Contact = () => {
       className="py-20 bg-gradient-to-br from-soft-blue-50 to-white dark:from-gray-900 dark:to-gray-800"
     >
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-clamp-2xl md:text-clamp-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
@@ -21,16 +21,24 @@ export const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="space-y-8">
             {/* Contact Information */}
-            <div className="space-y-8 animate-fade-in">
+            <div className="animate-fade-in">
               <ContactInfo />
+            </div>
+
+            {/* Quick Actions */}
+            <div className="animate-fade-in">
               <QuickActions />
-              <QRCodeCard />
             </div>
 
             {/* Contact Form */}
             <ContactForm />
+
+            {/* QR Code Card */}
+            <div className="animate-fade-in">
+              <QRCodeCard />
+            </div>
           </div>
         </div>
       </div>

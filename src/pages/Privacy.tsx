@@ -218,6 +218,7 @@ const Privacy = () => {
                         <li>Name (Pflichtfeld)</li>
                         <li>Telefonnummer (Pflichtfeld)</li>
                         <li>E-Mail-Adresse (optional)</li>
+                        <li>Einsatzort (optional)</li>
                         <li>Gewünschte Leistung (optional)</li>
                         <li>Bevorzugte Rückrufzeit (optional)</li>
                         <li>Nachricht (optional)</li>

@@ -24,6 +24,12 @@ export const contactFormSchema = z.object({
     .optional()
     .or(z.literal("")),
 
+  location: z
+    .string()
+    .max(200, "Einsatzort darf nicht länger als 200 Zeichen sein")
+    .optional()
+    .or(z.literal("")),
+
   preferredTime: z.string().optional(),
 
   callbackTime: z.string().optional(),
