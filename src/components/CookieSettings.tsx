@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Switch } from "@/components/ui/switch";
+import { initializeGA, disableGA, enableGA } from "@/lib/analytics";
 
 interface CookiePreferences {
   necessary: boolean;
@@ -34,8 +35,27 @@ export function CookieSettings() {
     setPreferences((prev) => ({ ...prev, [key]: value }));
   };
 
+  const applyAnalyticsSettings = (analyticsEnabled: boolean) => {
+    if (analyticsEnabled) {
+      initializeGA();
+      enableGA();
+    } else {
+      disableGA();
+    }
+  };
+
   const handleSavePreferences = () => {
     localStorage.setItem("cookie-consent", JSON.stringify(preferences));
+    applyAnalyticsSettings(preferences.analytics);
+
+    // Trigger storage event for other components
+    window.dispatchEvent(
+      new StorageEvent("storage", {
+        key: "cookie-consent",
+        newValue: JSON.stringify(preferences),
+      })
+    );
+
     setShowSettings(false);
   };
 

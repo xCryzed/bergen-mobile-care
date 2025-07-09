@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/use-theme";
+import { useAnalytics } from "@/hooks/use-analytics";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Imprint from "@/pages/Imprint.tsx";
@@ -13,6 +14,25 @@ import { SEOProvider } from "@/components/SEOProvier.tsx";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => {
+  useAnalytics();
+
+  return (
+    <>
+      <SEOProvider>
+        <Routes>
+          <Route path={"/"} element={<Index />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/impressum" element={<Imprint />} />
+          <Route path="/datenschutz" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </SEOProvider>
+      <CookieBanner />
+    </>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider defaultTheme="system" storageKey="bergen-mobile-care-theme">
@@ -20,17 +40,8 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <SEOProvider>
-            <Routes>
-              <Route path={"/"} element={<Index />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="/impressum" element={<Imprint />} />
-              <Route path="/datenschutz" element={<Privacy />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </SEOProvider>
+          <AppContent />
         </BrowserRouter>
-        <CookieBanner />
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>

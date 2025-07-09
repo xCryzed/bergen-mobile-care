@@ -10,6 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { initializeGA, disableGA, enableGA } from "@/lib/analytics";
 
 interface CookiePreferences {
   necessary: boolean;
@@ -36,6 +37,15 @@ export function CookieBanner() {
     }
   }, []);
 
+  const applyAnalyticsSettings = (analyticsEnabled: boolean) => {
+    if (analyticsEnabled) {
+      initializeGA();
+      enableGA();
+    } else {
+      disableGA();
+    }
+  };
+
   const handleAcceptAll = () => {
     const allAccepted = {
       necessary: true,
@@ -44,6 +54,7 @@ export function CookieBanner() {
     };
     setPreferences(allAccepted);
     localStorage.setItem("cookie-consent", JSON.stringify(allAccepted));
+    applyAnalyticsSettings(true);
     setShowBanner(false);
   };
 
@@ -55,11 +66,13 @@ export function CookieBanner() {
     };
     setPreferences(necessaryOnly);
     localStorage.setItem("cookie-consent", JSON.stringify(necessaryOnly));
+    applyAnalyticsSettings(false);
     setShowBanner(false);
   };
 
   const handleSavePreferences = () => {
     localStorage.setItem("cookie-consent", JSON.stringify(preferences));
+    applyAnalyticsSettings(preferences.analytics);
     setShowBanner(false);
     setShowSettings(false);
   };
@@ -68,6 +81,7 @@ export function CookieBanner() {
     setPreferences((prev) => ({ ...prev, [key]: value }));
   };
 
+  // ... keep existing code (JSX return statement)
   if (!showBanner) return null;
 
   return (
