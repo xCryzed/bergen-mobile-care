@@ -16,44 +16,48 @@ export const GoogleReviews = () => {
       document.head.appendChild(script);
     }
 
+    // Only listen for actual APP_VIEWS_LIMIT_REACHED errors
     const handleError = (event: ErrorEvent) => {
+      console.log("Error caught:", event.message); // Debug log
       if (event.message && event.message.includes("APP_VIEWS_LIMIT_REACHED")) {
         setIsWidgetVisible(false);
       }
     };
 
+    // Monitor console errors but be more specific
     const originalConsoleError = console.error;
     console.error = (...args) => {
       const message = args.join(" ");
-      if (
-        message.includes("APP_VIEWS_LIMIT_REACHED") ||
-        message.includes("32654581-d9fe-4f6e-bdbb-bfcf579df1b3")
-      ) {
+
+      // Only hide if it's specifically the limit reached error
+      if (message.includes("APP_VIEWS_LIMIT_REACHED")) {
         setIsWidgetVisible(false);
       }
+
       originalConsoleError.apply(console, args);
     };
 
     window.addEventListener("error", handleError);
 
+    // Give the widget more time to load before checking
     const checkWidget = () => {
       const widgetContainer = document.querySelector(
         ".elfsight-app-32654581-d9fe-4f6e-bdbb-bfcf579df1b3"
       );
+
       if (widgetContainer) {
-        const iframe = widgetContainer.querySelector("iframe");
-        if (!iframe || iframe.style.display === "none") {
-          setTimeout(() => {
-            const updatedIframe = widgetContainer.querySelector("iframe");
-            if (!updatedIframe || updatedIframe.style.display === "none") {
-              setIsWidgetVisible(false);
-            }
-          }, 5000);
+        // Check if there's an actual error message in the widget
+        const errorElement = widgetContainer.querySelector(
+          '[class*="error"], [class*="limit"]'
+        );
+        if (errorElement && errorElement.textContent?.includes("limit")) {
+          setIsWidgetVisible(false);
         }
       }
     };
 
-    setTimeout(checkWidget, 3000);
+    // Check after a longer delay to allow proper loading
+    setTimeout(checkWidget, 8000);
 
     return () => {
       window.removeEventListener("error", handleError);
