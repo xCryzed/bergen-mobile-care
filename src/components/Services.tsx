@@ -27,7 +27,7 @@ export const Services = () => {
       title: "Erweiterte Fußpflege",
       description:
         "Behandlung von Hühneraugen, Schwielen und eingewachsenen Nägeln, inkl. Basis Fußpflege",
-      price: "ab 35 €",
+      price: "ab 40 €",
       popular: false,
     },
     {
