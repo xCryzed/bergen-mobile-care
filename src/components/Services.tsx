@@ -27,7 +27,7 @@ export const Services = () => {
       title: "Erweiterte Fußpflege",
       description:
         "Behandlung von Hühneraugen, Schwielen und eingewachsenen Nägeln, inkl. Basis Fußpflege",
-      price: "ab 35 €",
+      price: "ab 40 €",
       popular: false,
     },
     {
@@ -60,6 +60,19 @@ export const Services = () => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToPriceInfo = () => {
+    const element = document.querySelector('.price-info') as HTMLElement;
+    if (element) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - 100; // 100px Abstand vom oberen Rand
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -115,6 +128,13 @@ export const Services = () => {
                     <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                       <span className="text-2xl font-bold text-soft-blue-600 dark:text-soft-blue-400">
                         {service.price}
+                        <button 
+                          onClick={scrollToPriceInfo}
+                          className="ml-1 text-sm text-soft-blue-500 hover:text-soft-blue-700 transition-colors cursor-pointer align-super"
+                          title="Preishinweise anzeigen"
+                        >
+                          *
+                        </button>
                       </span>
                     </div>
                   </div>
@@ -124,7 +144,7 @@ export const Services = () => {
           </div>
 
           {/* Important Notice */}
-          <div className="relative mb-12">
+          <div className="relative mb-12 price-info">
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-6 border-l-4 border-blue-400 dark:border-blue-500 shadow-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
