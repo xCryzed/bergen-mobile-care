@@ -7,6 +7,7 @@ import { FAQ } from "@/components/FAQ";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { StickyCallButton } from "@/components/StickyCallButton";
+import { StickyWhatsAppButton } from "@/components/StickyWhatsAppButton";
 import { GoogleReviews } from "@/components/GoogleReviews.tsx";
 import { Philosophy } from "@/components/Philosophy.tsx";
 
@@ -26,6 +27,7 @@ const Index = () => {
       </main>
       <Footer />
       <StickyCallButton />
+      <StickyWhatsAppButton />
     </div>
   );
 };
