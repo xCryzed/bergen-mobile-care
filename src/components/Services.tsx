@@ -19,6 +19,7 @@ export const Services = () => {
       title: "Basis Fußpflege",
       description:
         "Schneiden und Formen der Nägel, Reinigung des Nagelfalzes, Hornhautentfernung, Fußmassage",
+      price: "ab 30 €",
       popular: true,
     },
     {
@@ -26,6 +27,7 @@ export const Services = () => {
       title: "Erweiterte Fußpflege",
       description:
         "Behandlung von Hühneraugen, Schwielen und eingewachsenen Nägeln, inkl. Basis Fußpflege",
+      price: "ab 35 €",
       popular: false,
     },
     {
@@ -33,6 +35,7 @@ export const Services = () => {
       title: "Nagelprothetik",
       description:
         "Anfertigung künstlicher Nägel bei beschädigten oder teilweise fehlenden Nagelplatten",
+      price: "auf Anfrage",
       popular: false,
     },
     {
@@ -40,6 +43,7 @@ export const Services = () => {
       title: "Maniküre",
       description:
         "Kürzen und Formen der Fingernägel und Polieren der Nageloberfläche",
+      price: "ab 10 €",
       popular: false,
     },
     {
@@ -47,6 +51,7 @@ export const Services = () => {
       title: "Lackieren",
       description:
         "Auftragen von Farblack auf Finger- oder Fußnägel nach Wunsch",
+      price: "ab 7 €",
       popular: false,
     },
   ];
@@ -107,6 +112,11 @@ export const Services = () => {
                     <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
                       {service.description}
                     </p>
+                    <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
+                      <span className="text-2xl font-bold text-soft-blue-600 dark:text-soft-blue-400">
+                        {service.price}
+                      </span>
+                    </div>
                   </div>
                 </Card>
               );
@@ -124,11 +134,14 @@ export const Services = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
-                    Information
+                    Wichtige Hinweise
                   </h4>
-                  <p className="text-blue-700 dark:text-blue-300 leading-relaxed">
+                  <p className="text-blue-700 dark:text-blue-300 leading-relaxed mb-3">
                     Ich bin keine Podologin und führe keine ärztlich verordnete
                     Fußpflege durch
+                  </p>
+                  <p className="text-sm text-blue-600 dark:text-blue-400 italic">
+                    * Alle Preise sind Startpreise und können je nach Aufwand angepasst werden
                   </p>
                 </div>
               </div>
