@@ -64,14 +64,14 @@ export const Services = () => {
   };
 
   const scrollToPriceInfo = () => {
-    const element = document.querySelector('.price-info') as HTMLElement;
+    const element = document.querySelector(".price-info") as HTMLElement;
     if (element) {
       const elementPosition = element.offsetTop;
       const offsetPosition = elementPosition - 100; // 100px Abstand vom oberen Rand
-      
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -128,7 +128,7 @@ export const Services = () => {
                     <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                       <span className="text-2xl font-bold text-soft-blue-600 dark:text-soft-blue-400">
                         {service.price}
-                        <button 
+                        <button
                           onClick={scrollToPriceInfo}
                           className="ml-1 text-sm text-soft-blue-500 hover:text-soft-blue-700 transition-colors cursor-pointer align-super"
                           title="Preishinweise anzeigen"
