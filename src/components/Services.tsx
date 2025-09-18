@@ -141,7 +141,8 @@ export const Services = () => {
                     Fußpflege durch
                   </p>
                   <p className="text-sm text-blue-600 dark:text-blue-400 italic">
-                    * Alle Preise sind Startpreise und können je nach Aufwand angepasst werden
+                    * Alle Preise sind Startpreise und können je nach Aufwand
+                    angepasst werden
                   </p>
                 </div>
               </div>
