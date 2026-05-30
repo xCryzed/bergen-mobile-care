@@ -11,6 +11,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Badge } from "@/components/ui/badge";
+import { Check, ChevronDown, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
@@ -37,7 +45,7 @@ export const ContactForm = () => {
       phone: "",
       email: "",
       location: "",
-      preferredTime: "",
+      preferredTime: [],
       callbackTime: "",
       message: "",
       privacy: false,
@@ -56,7 +64,10 @@ export const ContactForm = () => {
       from_phone: data.phone.trim(),
       from_email: data.email?.trim() || "Keine E-Mail angegeben",
       location: data.location?.trim() || "Nicht angegeben",
-      preferred_service: data.preferredTime || "Nicht angegeben",
+      preferred_service:
+        data.preferredTime && data.preferredTime.length > 0
+          ? data.preferredTime.join(", ")
+          : "Nicht angegeben",
       callback_time: data.callbackTime || "Nicht angegeben",
       message: data.message?.trim() || "Keine zusätzliche Nachricht",
       to_name: "Regina Bergen",
@@ -186,65 +197,104 @@ export const ContactForm = () => {
             <FormField
               control={form.control}
               name="preferredTime"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                    Gewünschte Leistung
-                  </FormLabel>
-                  <Select onValueChange={field.onChange} value={field.value}>
-                    <FormControl>
-                      <SelectTrigger className="mt-2 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100">
-                        <SelectValue placeholder="Bitte wählen" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent className="dark:bg-gray-800 dark:border-gray-700">
-                      <SelectItem
-                        value="Basis Fußpflege"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
+              render={({ field }) => {
+                const options = [
+                  "Basis Fußpflege",
+                  "Erweiterte Fußpflege",
+                  "Nagelprothetik",
+                  "Maniküre",
+                  "Lackieren",
+                  "Beratung",
+                  "Erstgespräch",
+                ];
+                const selected: string[] = field.value || [];
+                const toggle = (value: string) => {
+                  if (selected.includes(value)) {
+                    field.onChange(selected.filter((v) => v !== value));
+                  } else {
+                    field.onChange([...selected, value]);
+                  }
+                };
+                const remove = (value: string) => {
+                  field.onChange(selected.filter((v) => v !== value));
+                };
+                return (
+                  <FormItem>
+                    <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                      Gewünschte Leistungen
+                    </FormLabel>
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <button
+                          type="button"
+                          className="mt-2 flex min-h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                        >
+                          <div className="flex flex-wrap gap-1.5 flex-1 text-left">
+                            {selected.length === 0 ? (
+                              <span className="text-muted-foreground">
+                                Bitte wählen
+                              </span>
+                            ) : (
+                              selected.map((value) => (
+                                <Badge
+                                  key={value}
+                                  variant="secondary"
+                                  className="gap-1 pr-1"
+                                >
+                                  {value}
+                                  <span
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-label={`${value} entfernen`}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      remove(value);
+                                    }}
+                                    onKeyDown={(e) => {
+                                      if (e.key === "Enter" || e.key === " ") {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        remove(value);
+                                      }
+                                    }}
+                                    className="ml-0.5 rounded-sm hover:bg-muted-foreground/20 p-0.5 cursor-pointer inline-flex"
+                                  >
+                                    <X className="h-3 w-3" />
+                                  </span>
+                                </Badge>
+                              ))
+                            )}
+                          </div>
+                          <ChevronDown className="h-4 w-4 opacity-50 ml-2 shrink-0" />
+                        </button>
+                      </PopoverTrigger>
+                      <PopoverContent
+                        className="w-[--radix-popover-trigger-width] p-1 dark:bg-gray-800 dark:border-gray-700"
+                        align="start"
                       >
-                        Basis Fußpflege
-                      </SelectItem>
-                      <SelectItem
-                        value="Erweiterte Fußpflege"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
-                      >
-                        Erweiterte Fußpflege
-                      </SelectItem>
-                      <SelectItem
-                        value="Nagelprothetik"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
-                      >
-                        Nagelprothetik
-                      </SelectItem>
-                      <SelectItem
-                        value="Maniküre"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
-                      >
-                        Maniküre
-                      </SelectItem>
-                      <SelectItem
-                        value="Lackieren"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
-                      >
-                        Lackieren
-                      </SelectItem>
-                      <SelectItem
-                        value="Beratung"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
-                      >
-                        Beratung
-                      </SelectItem>
-                      <SelectItem
-                        value="Erstgespräch"
-                        className="dark:text-gray-100 dark:hover:bg-gray-700"
-                      >
-                        Erstgespräch
-                      </SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
+                        {options.map((option) => {
+                          const isSelected = selected.includes(option);
+                          return (
+                            <button
+                              key={option}
+                              type="button"
+                              onClick={() => toggle(option)}
+                              className={cn(
+                                "flex w-full items-center justify-between rounded-sm px-2 py-1.5 text-sm text-left hover:bg-accent hover:text-accent-foreground dark:text-gray-100 dark:hover:bg-gray-700",
+                                isSelected && "bg-accent/50"
+                              )}
+                            >
+                              <span>{option}</span>
+                              {isSelected && <Check className="h-4 w-4" />}
+                            </button>
+                          );
+                        })}
+                      </PopoverContent>
+                    </Popover>
+                    <FormMessage />
+                  </FormItem>
+                );
+              }}
             />
 
             <FormField

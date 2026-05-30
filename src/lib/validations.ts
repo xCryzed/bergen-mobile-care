@@ -30,7 +30,7 @@ export const contactFormSchema = z.object({
     .optional()
     .or(z.literal("")),
 
-  preferredTime: z.string().optional(),
+  preferredTime: z.array(z.string()).optional(),
 
   callbackTime: z.string().optional(),
 
