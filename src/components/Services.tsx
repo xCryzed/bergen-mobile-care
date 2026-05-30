@@ -19,7 +19,7 @@ export const Services = () => {
       title: "Basis Fußpflege",
       description:
         "Schneiden und Formen der Nägel, Reinigung des Nagelfalzes, Hornhautentfernung, Fußmassage",
-      price: "30 €",
+      price: "ab 30 €",
       popular: true,
     },
     {
@@ -126,7 +126,7 @@ export const Services = () => {
                       {service.description}
                     </p>
                     <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
-                      <span className="text-2xl font-bold text-soft-blue-600 dark:text-soft-blue-400">
+                      <span className="text-xl font-bold text-soft-blue-600 dark:text-soft-blue-400">
                         {service.price}
                         <button
                           onClick={scrollToPriceInfo}
