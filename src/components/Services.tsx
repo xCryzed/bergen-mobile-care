@@ -19,7 +19,7 @@ export const Services = () => {
       title: "Basis Fußpflege",
       description:
         "Schneiden und Formen der Nägel, Reinigung des Nagelfalzes, Hornhautentfernung, Fußmassage",
-      price: "ab 30 €",
+      price: "ab 35 €",
       popular: true,
     },
     {
@@ -27,7 +27,7 @@ export const Services = () => {
       title: "Erweiterte Fußpflege",
       description:
         "Behandlung von Hühneraugen, Schwielen und eingewachsenen Nägeln, inkl. Basis Fußpflege",
-      price: "ab 40 €",
+      price: "ab 45 €",
       popular: false,
     },
     {
@@ -43,7 +43,7 @@ export const Services = () => {
       title: "Maniküre",
       description:
         "Kürzen und Formen der Fingernägel und Polieren der Nageloberfläche",
-      price: "ab 10 €",
+      price: "ab 15 €",
       popular: false,
     },
     {
@@ -51,7 +51,7 @@ export const Services = () => {
       title: "Lackieren",
       description:
         "Auftragen von Farblack auf Finger- oder Fußnägel nach Wunsch",
-      price: "ab 7 €",
+      price: "ab 10 €",
       popular: false,
     },
   ];
