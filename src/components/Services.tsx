@@ -18,7 +18,7 @@ export const Services = () => {
       icon: Footprints,
       title: "Basis Fußpflege",
       description:
-        "Schneiden und Formen der Nägel, Reinigung des Nagelfalzes, Hornhautentfernung, Fußmassage",
+        "Schneiden und Formen der Nägel, Reinigung des Nagelfalzes und Hornhautentfernung",
       price: "ab 35 €",
       popular: true,
     },
